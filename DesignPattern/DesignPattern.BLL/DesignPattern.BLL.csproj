@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6B86149A-85FA-46BE-99DE-57D8E905C404}</ProjectGuid>
+    <ProjectGuid>{C191C772-7C7E-408B-8824-624DE0BDFBD1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPattern.Entity</RootNamespace>
-    <AssemblyName>DesignPattern.Entity</AssemblyName>
+    <RootNamespace>DesignPattern.BLL</RootNamespace>
+    <AssemblyName>DesignPattern.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,12 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FactoryPattern\Circle.cs" />
-    <Compile Include="FactoryPattern\Rectangle.cs" />
-    <Compile Include="FactoryPattern\Shape.cs" />
-    <Compile Include="FactoryPattern\ShapeType.cs" />
-    <Compile Include="FactoryPattern\Square.cs" />
+    <Compile Include="FactoryPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPattern.Entity\DesignPattern.Entity.csproj">
+      <Project>{6b86149a-85fa-46be-99de-57d8e905c404}</Project>
+      <Name>DesignPattern.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

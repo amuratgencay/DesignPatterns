@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6B86149A-85FA-46BE-99DE-57D8E905C404}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{002F4BDF-645C-4FD3-BB7F-DCBD16DEAB31}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPattern.Entity</RootNamespace>
-    <AssemblyName>DesignPattern.Entity</AssemblyName>
+    <RootNamespace>DesignPattern.ConsoleApp</RootNamespace>
+    <AssemblyName>DesignPattern.ConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FactoryPattern\Circle.cs" />
-    <Compile Include="FactoryPattern\Rectangle.cs" />
-    <Compile Include="FactoryPattern\Shape.cs" />
-    <Compile Include="FactoryPattern\ShapeType.cs" />
-    <Compile Include="FactoryPattern\Square.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPattern.BLL\DesignPattern.BLL.csproj">
+      <Project>{c191c772-7c7e-408b-8824-624de0bdfbd1}</Project>
+      <Name>DesignPattern.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DesignPattern.Entity\DesignPattern.Entity.csproj">
+      <Project>{6b86149a-85fa-46be-99de-57d8e905c404}</Project>
+      <Name>DesignPattern.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
