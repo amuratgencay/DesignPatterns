@@ -2,10 +2,8 @@
 
 namespace DesignPattern.Entity.FactoryPattern
 {
-    public enum ShapeType
+    public interface IShape
     {
-        Rectangle,
-        Sqaure,
-        Circle
+        double Area();
     }
 }

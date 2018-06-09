@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.Entity.FactoryPattern
 {
-    public class Rectangle : Shape
+    public class Rectangle : IShape
     {
         public double Width { get; set; }
         public double Height { get; set; }
@@ -14,16 +10,17 @@ namespace DesignPattern.Entity.FactoryPattern
         public Rectangle(double width, double height)
         {
             Width = width;
-            Height = height;            
+            Height = height;
         }
-        public override double Area()
+        public double Area()
         {
-            return Width*Height;
+            return Width * Height;
         }
 
         public override string ToString()
         {
-            return $"Rectangle[{Width},{Height}] = {Area()}";
+
+            return $"Rectangle[{Width},{Height}] = ".PadRight(25) + Area();
         }
     }
 }
