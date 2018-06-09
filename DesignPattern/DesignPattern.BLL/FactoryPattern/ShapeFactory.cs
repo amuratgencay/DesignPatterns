@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using DesignPattern.Entity.FactoryPattern;
 
-namespace DesignPattern.BLL
+namespace DesignPattern.BLL.FactoryPattern
 {
-    public class FactoryPattern
+    public class ShapeFactory
     {
         public static IShape CreateShape(ShapeType shapeType)
         {
