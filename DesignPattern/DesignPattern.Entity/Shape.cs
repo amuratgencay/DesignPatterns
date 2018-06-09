@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Entity
 {
-    public class Shape
+    public abstract class Shape
     {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public override string ToString()
+        {
+            return $"Shape[{X},{Y}]";
+        }
     }
 }
