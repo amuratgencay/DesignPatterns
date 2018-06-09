@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.Entity.FactoryPattern
 {
-    public class Circle : Shape
+    public class Circle : IShape
     {
         public double Radius { get; set; }
 
@@ -15,14 +11,14 @@ namespace DesignPattern.Entity.FactoryPattern
             Radius = radius;
 
         }
-        public override double Area()
+        public double Area()
         {
             return Math.PI * Radius * Radius;
         }
 
         public override string ToString()
         {
-            return $"Circle[{Radius},{Radius}] = {Area()}";
+            return $"Circle[{Radius}] = ".PadRight(25) + Area();
         }
     }
 }

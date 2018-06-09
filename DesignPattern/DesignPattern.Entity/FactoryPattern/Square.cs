@@ -1,28 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.Entity.FactoryPattern
 {
-    public class Square : Shape
+    public class Square : IShape
     {
         public double Size { get; set; }
-        
+
         public Square(double size)
         {
             Size = size;
-            
+
         }
-        public override double Area()
+        public double Area()
         {
             return Size * Size;
         }
 
         public override string ToString()
         {
-            return $"Square[{Size},{Size}] = {Area()}";
+            return $"Square[{Size}] = ".PadRight(25) + Area();
         }
     }
 }

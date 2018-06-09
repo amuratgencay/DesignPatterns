@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="FactoryPattern\Circle.cs" />
     <Compile Include="FactoryPattern\Rectangle.cs" />
-    <Compile Include="FactoryPattern\Shape.cs" />
+    <Compile Include="FactoryPattern\IShape.cs" />
     <Compile Include="FactoryPattern\ShapeType.cs" />
     <Compile Include="FactoryPattern\Square.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
