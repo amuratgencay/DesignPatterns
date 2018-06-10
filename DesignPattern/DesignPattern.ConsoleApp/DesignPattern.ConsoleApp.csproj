@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactoryPattern\AbstractFactoryPatternExample.cs" />
+    <Compile Include="BuilderPattern\BuilderPatternExample.cs" />
     <Compile Include="FactoryPattern\FactoryPatternExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
