@@ -1,9 +1,10 @@
 ﻿using System;
-using DesignPattern.ConsoleApp.AbstractFactoryPattern;
-using DesignPattern.ConsoleApp.BuilderPattern;
-using DesignPattern.ConsoleApp.FactoryPattern;
-using DesignPattern.ConsoleApp.PrototypePattern;
-using DesignPattern.ConsoleApp.SingletonPattern;
+
+using DesignPattern.ConsoleApp.CreationalPatterns.AbstractFactoryPattern;
+using DesignPattern.ConsoleApp.CreationalPatterns.BuilderPattern;
+using DesignPattern.ConsoleApp.CreationalPatterns.FactoryPattern;
+using DesignPattern.ConsoleApp.CreationalPatterns.PrototypePattern;
+using DesignPattern.ConsoleApp.CreationalPatterns.SingletonPattern;
 
 
 namespace DesignPattern.ConsoleApp

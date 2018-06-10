@@ -40,22 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactoryPattern\IAbstractFactory.cs" />
-    <Compile Include="AbstractFactoryPattern\FactoryProducer.cs" />
-    <Compile Include="AbstractFactoryPattern\FillFactory.cs" />
-    <Compile Include="AbstractFactoryPattern\IFactory.cs" />
-    <Compile Include="AbstractFactoryPattern\ShapeFactory.cs" />
-    <Compile Include="BuilderPattern\Meal.cs" />
-    <Compile Include="BuilderPattern\Cup.cs" />
-    <Compile Include="BuilderPattern\Ingredients.cs" />
-    <Compile Include="BuilderPattern\IPacking.cs" />
-    <Compile Include="BuilderPattern\Packing.cs" />
-    <Compile Include="BuilderPattern\Piece.cs" />
-    <Compile Include="BuilderPattern\TableSpoon.cs" />
-    <Compile Include="FactoryPattern\ShapeFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\IAbstractFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\FactoryProducer.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\FillFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\IFactory.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\ShapeFactory.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\Meal.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\Cup.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\Ingredients.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\IPacking.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\Packing.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\Piece.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\TableSpoon.cs" />
+    <Compile Include="CreationalPatterns\FactoryPattern\ShapeFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PrototypePattern\FibonacciCache.cs" />
-    <Compile Include="SingletonPattern\MessageLogger.cs" />
+    <Compile Include="CreationalPatterns\PrototypePattern\FibonacciCache.cs" />
+    <Compile Include="CreationalPatterns\SingletonPattern\MessageLogger.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DesignPattern.Entity\DesignPattern.Entity.csproj">
@@ -63,7 +63,9 @@
       <Name>DesignPattern.Entity</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="StructuralPatterns\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
