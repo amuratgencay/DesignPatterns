@@ -51,6 +51,7 @@
     <Compile Include="AbstractFactoryPattern\Fill\Red.cs" />
     <Compile Include="AbstractFactoryPattern\Shape\ShapeType.cs" />
     <Compile Include="AbstractFactoryPattern\Shape\Square.cs" />
+    <Compile Include="BuilderPattern\Food.cs" />
     <Compile Include="FactoryPattern\Circle.cs" />
     <Compile Include="FactoryPattern\Rectangle.cs" />
     <Compile Include="FactoryPattern\IShape.cs" />
