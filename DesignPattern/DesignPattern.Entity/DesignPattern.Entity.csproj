@@ -40,28 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactoryPattern\FactoryType.cs" />
-    <Compile Include="AbstractFactoryPattern\Fill\Blue.cs" />
-    <Compile Include="AbstractFactoryPattern\Fill\FillType.cs" />
-    <Compile Include="AbstractFactoryPattern\Shape\Circle.cs" />
-    <Compile Include="AbstractFactoryPattern\Fill\Green.cs" />
-    <Compile Include="AbstractFactoryPattern\Fill\IFill.cs" />
-    <Compile Include="AbstractFactoryPattern\Shape\IShape.cs" />
-    <Compile Include="AbstractFactoryPattern\Shape\Rectangle.cs" />
-    <Compile Include="AbstractFactoryPattern\Fill\Red.cs" />
-    <Compile Include="AbstractFactoryPattern\Shape\ShapeType.cs" />
-    <Compile Include="AbstractFactoryPattern\Shape\Square.cs" />
-    <Compile Include="BuilderPattern\Food.cs" />
-    <Compile Include="FactoryPattern\Circle.cs" />
-    <Compile Include="FactoryPattern\Rectangle.cs" />
-    <Compile Include="FactoryPattern\IShape.cs" />
-    <Compile Include="FactoryPattern\ShapeType.cs" />
-    <Compile Include="FactoryPattern\Square.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Blue.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\FillType.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Circle.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Green.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\IFill.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\IShape.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Rectangle.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Red.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\ShapeType.cs" />
+    <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Square.cs" />
+    <Compile Include="CreationalPatterns\BuilderPattern\Food.cs" />
+    <Compile Include="CreationalPatterns\FactoryPattern\Circle.cs" />
+    <Compile Include="CreationalPatterns\FactoryPattern\Rectangle.cs" />
+    <Compile Include="CreationalPatterns\FactoryPattern\IShape.cs" />
+    <Compile Include="CreationalPatterns\FactoryPattern\ShapeType.cs" />
+    <Compile Include="CreationalPatterns\FactoryPattern\Square.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PrototypePattern\FibonacciNumber.cs" />
-    <Compile Include="SingletonPattern\Message.cs" />
+    <Compile Include="CreationalPatterns\PrototypePattern\FibonacciNumber.cs" />
+    <Compile Include="CreationalPatterns\SingletonPattern\Message.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="StructuralPatterns\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
