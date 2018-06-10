@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DesignPattern.Entity.PrototypePattern;
 
 namespace DesignPattern.BLL.PrototypePattern
@@ -22,7 +20,7 @@ namespace DesignPattern.BLL.PrototypePattern
                     _fibonacciCache.Add(i + 1, new FibonacciNumber(i + 1, fib.Value, fib.First));
                 }
             }
-            var value = _fibonacciCache[num];
+            FibonacciNumber value = (FibonacciNumber) _fibonacciCache[num].Clone();
             return value;
         }
 
