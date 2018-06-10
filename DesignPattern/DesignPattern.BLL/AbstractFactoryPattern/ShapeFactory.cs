@@ -1,14 +1,13 @@
 ﻿using System;
-using DesignPattern.Entity.AbstractFactoryPattern.Fill;
 using DesignPattern.Entity.AbstractFactoryPattern.Shape;
 
 namespace DesignPattern.BLL.AbstractFactoryPattern
 {
-    public class ShapeFactory : IAbstractFactory
+    public class ShapeFactory : IFactory<IShape, ShapeType>
     {
-        public IShape CreateShape(ShapeType param)
+        public IShape Produce(ShapeType type)
         {
-            switch (param)
+            switch (type)
             {
                 case ShapeType.Rectangle:
                     return new Rectangle(10, 15);
@@ -17,13 +16,9 @@ namespace DesignPattern.BLL.AbstractFactoryPattern
                 case ShapeType.Circle:
                     return new Circle(10);
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(param), param, null);
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
-        }
-
-        IFill IAbstractFactory.CreateFill(FillType param)
-        {
-            throw new NotImplementedException();
-        }
+        }       
     }
+
 }
