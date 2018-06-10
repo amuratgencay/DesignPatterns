@@ -40,9 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactoryPattern\AbstractFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\IAbstractFactory.cs" />
     <Compile Include="AbstractFactoryPattern\FactoryProducer.cs" />
     <Compile Include="AbstractFactoryPattern\FillFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\IFactory.cs" />
     <Compile Include="AbstractFactoryPattern\ShapeFactory.cs" />
     <Compile Include="FactoryPattern\ShapeFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,19 +1,13 @@
 ﻿using System;
 using DesignPattern.Entity.AbstractFactoryPattern.Fill;
-using DesignPattern.Entity.AbstractFactoryPattern.Shape;
 
 namespace DesignPattern.BLL.AbstractFactoryPattern
 {
-    public class FillFactory : IAbstractFactory
+    public class FillFactory : IFactory<IFill, FillType>
     {
-        IShape IAbstractFactory.CreateShape(ShapeType param)
+        public IFill Produce(FillType type)
         {
-            throw new NotImplementedException();
-        }
-
-        public IFill CreateFill(FillType param)
-        {
-            switch (param)
+            switch (type)
             {
                 case FillType.Red:
                     return new Red();
@@ -22,8 +16,9 @@ namespace DesignPattern.BLL.AbstractFactoryPattern
                 case FillType.Blue:
                     return new Blue();
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(param), param, null);
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
         }
     }
+
 }
