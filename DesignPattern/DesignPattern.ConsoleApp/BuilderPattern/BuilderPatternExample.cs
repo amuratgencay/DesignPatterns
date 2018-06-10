@@ -31,14 +31,14 @@ namespace DesignPattern.ConsoleApp.BuilderPattern
 
         public static void Run()
         {
-            Console.WriteLine("<Factory Pattern Example>");
+            Console.WriteLine("<Builder Pattern Example>");
             Console.WriteLine();
                 PreparePastry().ShowPacking();
                 Console.WriteLine();
                 Console.WriteLine();
                 PreparePancake().ShowPacking();
             Console.WriteLine();
-            Console.WriteLine("</Factory Pattern Example>");
+            Console.WriteLine("</Builder Pattern Example>");
             Console.WriteLine();
         }
     }

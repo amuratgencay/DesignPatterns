@@ -7,7 +7,7 @@ using DesignPattern.Entity.FactoryPattern;
 
 namespace DesignPattern.BLL.FactoryPattern
 {
-    public class ShapeFactory
+    public static class ShapeFactory
     {
         public static IShape CreateShape(ShapeType shapeType)
         {

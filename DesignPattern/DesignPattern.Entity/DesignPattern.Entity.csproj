@@ -58,6 +58,7 @@
     <Compile Include="FactoryPattern\ShapeType.cs" />
     <Compile Include="FactoryPattern\Square.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrototypePattern\FibonacciNumber.cs" />
     <Compile Include="SingletonPattern\Message.cs" />
   </ItemGroup>
   <ItemGroup />
