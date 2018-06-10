@@ -12,8 +12,8 @@ namespace DesignPattern.ConsoleApp.AbstractFactoryPattern
             
             Console.WriteLine("<Abstract Factory Pattern Example>");
             Console.WriteLine();
-            Console.WriteLine("\t" + new FactoryProducer<IShape, ShapeType>().GetFactory().Produce(ShapeType.Circle));
-            Console.WriteLine("\t" + new FactoryProducer<IFill, FillType>().GetFactory().Produce(FillType.Red));
+                Console.WriteLine("\t" + new FactoryProducer<IShape, ShapeType>().GetFactory().Produce(ShapeType.Circle));
+                Console.WriteLine("\t" + new FactoryProducer<IFill, FillType>().GetFactory().Produce(FillType.Red));
             Console.WriteLine();
             Console.WriteLine("</Abstract Factory Pattern Example>");
             Console.WriteLine();

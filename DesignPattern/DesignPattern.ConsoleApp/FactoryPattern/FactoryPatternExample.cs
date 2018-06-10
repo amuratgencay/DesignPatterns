@@ -10,9 +10,9 @@ namespace DesignPattern.ConsoleApp.FactoryPattern
         {
             Console.WriteLine("<Factory Pattern Example>");
             Console.WriteLine();
-            Console.WriteLine("\t" + ShapeFactory.CreateShape(ShapeType.Sqaure));
-            Console.WriteLine("\t" + ShapeFactory.CreateShape(ShapeType.Rectangle));
-            Console.WriteLine("\t" + ShapeFactory.CreateShape(ShapeType.Circle));
+                Console.WriteLine("\t" + ShapeFactory.CreateShape(ShapeType.Sqaure));
+                Console.WriteLine("\t" + ShapeFactory.CreateShape(ShapeType.Rectangle));
+                Console.WriteLine("\t" + ShapeFactory.CreateShape(ShapeType.Circle));
             Console.WriteLine();
             Console.WriteLine("</Factory Pattern Example>");
             Console.WriteLine();
