@@ -67,6 +67,10 @@
     <Compile Include="StructuralPatterns\DecoratorPattern\Circle.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\IDrawable.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\Rectangle.cs" />
+    <Compile Include="StructuralPatterns\FacadePattern\Circle.cs" />
+    <Compile Include="StructuralPatterns\FacadePattern\IDrawable.cs" />
+    <Compile Include="StructuralPatterns\FacadePattern\Rectangle.cs" />
+    <Compile Include="StructuralPatterns\FacadePattern\Square.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

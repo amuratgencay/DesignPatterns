@@ -62,6 +62,7 @@
     <Compile Include="StructuralPatterns\DecoratorPattern\BlueShapeDecorator.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\RedShapeDecorator.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\ShapeDecorator.cs" />
+    <Compile Include="StructuralPatterns\FacadePattern\ShapeMaker.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DesignPattern.Entity\DesignPattern.Entity.csproj">

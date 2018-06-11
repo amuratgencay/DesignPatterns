@@ -10,3 +10,8 @@
  3. Singleton Pattern
  4. Builder Pattern
  5. Prototype Pattern
+## Structural Design Patterns
+ 1. Adapter Pattern
+ 2. Bridge Pattern
+ 3. Decorator Pattern
+ 4. Facade Pattern
