@@ -8,10 +8,11 @@ namespace DesignPattern.Entity.StructuralPatterns.BridgePattern
 {
     public abstract class Shape
     {
-        protected IDrawable _drawable;
-        public Shape(IDrawable drawable)
+        protected readonly IDrawable Drawable;
+
+        protected Shape(IDrawable drawable)
         {
-            _drawable = drawable;
+            Drawable = drawable;
         }
         public abstract void Draw();
     }
