@@ -52,6 +52,7 @@
     <Compile Include="StructuralPatterns\AdapterPattern\AdapterPatternExample.cs" />
     <Compile Include="StructuralPatterns\BridgePattern\BridgePatternExample.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\DecoratorPatternExample.cs" />
+    <Compile Include="StructuralPatterns\FacadePattern\FacadePatternExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
