@@ -5,6 +5,7 @@ namespace DesignPattern.BLL.StructuralPatterns.AdapterPattern
 {
     public class RichCompound : Compound
     {
+        private readonly ChemicalDatabank _chemicalDatabank = new ChemicalDatabank();
         public RichCompound(CompoundType chemical) : base(chemical.ToString())
         {
 
@@ -20,16 +21,13 @@ namespace DesignPattern.BLL.StructuralPatterns.AdapterPattern
         public override string ToString()
         {
 
-            BoilingPoint = ChemicalDatabank.MapRichCompounds[Chemical].BoilingPoint;
-            MeltingPoint = ChemicalDatabank.MapRichCompounds[Chemical].MeltingPoint;
-            MolecularWeight = ChemicalDatabank.MapRichCompounds[Chemical].MolecularWeight;
-            MoleculerFormula = ChemicalDatabank.MapRichCompounds[Chemical].MoleculerFormula;
+            var richCompound = _chemicalDatabank.GetCompound(Chemical);
 
             return $"{base.ToString()}\n"
-                      + $"\t\tFormula: {MoleculerFormula}\n"
-                      + $"\t\tWeight: {MolecularWeight}\n"
-                      + $"\t\tMelting Pt: {MeltingPoint}\n"
-                      + $"\t\tBoiling Pt: {BoilingPoint}\n";
+                      + $"\t\tFormula: {richCompound.MoleculerFormula}\n"
+                      + $"\t\tWeight: {richCompound.MolecularWeight}\n"
+                      + $"\t\tMelting Pt: { richCompound.MeltingPoint}\n"
+                      + $"\t\tBoiling Pt: {richCompound.BoilingPoint}\n";
 
         }
     }
