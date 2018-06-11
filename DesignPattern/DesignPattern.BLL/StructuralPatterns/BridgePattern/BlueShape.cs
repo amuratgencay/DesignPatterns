@@ -11,10 +11,13 @@ namespace DesignPattern.BLL.StructuralPatterns.BridgePattern
     {
         public void Draw(Shape shape)
         {
-            var tmp = Console.ForegroundColor;
+            var tmpForeground = Console.ForegroundColor;
+            var tmpBackground = Console.BackgroundColor;
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine(shape);
-            Console.ForegroundColor = tmp;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.WriteLine("Blue: " + shape);
+            Console.ForegroundColor = tmpForeground;
+            Console.BackgroundColor = tmpBackground;
         }
     }
 }

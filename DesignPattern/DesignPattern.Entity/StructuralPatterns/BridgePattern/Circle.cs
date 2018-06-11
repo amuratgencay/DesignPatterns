@@ -20,7 +20,7 @@ namespace DesignPattern.Entity.StructuralPatterns.BridgePattern
         }
         public override void Draw()
         {
-            _drawable.Draw(this);
+            Drawable.Draw(this);
         }
         public override string ToString()
         {

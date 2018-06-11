@@ -17,8 +17,10 @@ namespace DesignPattern.ConsoleApp.StructuralPatterns.BridgePattern
 
             Console.WriteLine("<Bridge Pattern Example>");
             Console.WriteLine();
-            redCircle.Draw();
-            blueRectangle.Draw();
+                Console.Write("\t");
+                redCircle.Draw();
+                Console.Write("\t");
+                blueRectangle.Draw();
             Console.WriteLine();
             Console.WriteLine("</Bridge Pattern Example>");
             Console.WriteLine();
