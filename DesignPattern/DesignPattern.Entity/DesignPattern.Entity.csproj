@@ -61,6 +61,10 @@
     <Compile Include="CreationalPatterns\SingletonPattern\Message.cs" />
     <Compile Include="StructuralPatterns\AdapterPattern\Compound.cs" />
     <Compile Include="StructuralPatterns\AdapterPattern\CompoundType.cs" />
+    <Compile Include="StructuralPatterns\BridgePattern\IDrawable.cs" />
+    <Compile Include="StructuralPatterns\BridgePattern\Circle.cs" />
+    <Compile Include="StructuralPatterns\BridgePattern\Rectangle.cs" />
+    <Compile Include="StructuralPatterns\BridgePattern\Shape.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

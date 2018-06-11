@@ -20,10 +20,6 @@ namespace DesignPattern.ConsoleApp.StructuralPatterns.AdapterPattern
             Console.WriteLine();
             Console.WriteLine("</Adapter Pattern Example>");
             Console.WriteLine();
-
-
-
-            
             
         }
     }

@@ -58,6 +58,8 @@
     <Compile Include="CreationalPatterns\SingletonPattern\MessageLogger.cs" />
     <Compile Include="StructuralPatterns\AdapterPattern\ChemicalDatabank.cs" />
     <Compile Include="StructuralPatterns\AdapterPattern\RichCompound.cs" />
+    <Compile Include="StructuralPatterns\BridgePattern\BlueShape.cs" />
+    <Compile Include="StructuralPatterns\BridgePattern\RedShape.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DesignPattern.Entity\DesignPattern.Entity.csproj">

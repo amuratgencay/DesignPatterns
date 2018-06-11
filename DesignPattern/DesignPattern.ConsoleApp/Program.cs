@@ -6,7 +6,7 @@ using DesignPattern.ConsoleApp.CreationalPatterns.FactoryPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.PrototypePattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.SingletonPattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.AdapterPattern;
-
+using DesignPattern.ConsoleApp.StructuralPatterns.BridgePattern;
 
 namespace DesignPattern.ConsoleApp
 {
@@ -23,7 +23,8 @@ namespace DesignPattern.ConsoleApp
             PrototypePatternExample.Run();
             */
             //Structural Patterns
-            AdapterPatternExample.Run();
+            //AdapterPatternExample.Run();
+            BridgePatternExample.Run();
 
         }
     }

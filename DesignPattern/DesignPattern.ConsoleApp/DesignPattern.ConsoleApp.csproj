@@ -51,6 +51,7 @@
     <Compile Include="CreationalPatterns\PrototypePattern\PrototypePatternExample.cs" />
     <Compile Include="CreationalPatterns\SingletonPattern\SingletonPatternExample.cs" />
     <Compile Include="StructuralPatterns\AdapterPattern\AdapterPatternExample.cs" />
+    <Compile Include="StructuralPatterns\BridgePattern\BridgePatternExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
