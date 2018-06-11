@@ -8,11 +8,10 @@ namespace DesignPattern.BLL.CreationalPatterns.SingletonPattern
 {
     public class MessageLogger : TextWriter
     {
-        private static readonly  MessageLogger _instance = new MessageLogger();
-        private readonly List<Message> _messageLogs = new List<Message>();
         private readonly TextWriter _consoleTextWriter = Console.Out;
-        public static MessageLogger Instance => _instance;
-        public override Encoding Encoding => System.Text.Encoding.UTF8;
+        private readonly List<Message> _messageLogs = new List<Message>();
+        public static MessageLogger Instance { get; } = new MessageLogger();
+        public override Encoding Encoding => Encoding.UTF8;
 
         public override void WriteLine(string value)
         {

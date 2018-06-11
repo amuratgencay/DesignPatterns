@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Shape
+﻿namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Shape
 {
     public enum ShapeType
     {

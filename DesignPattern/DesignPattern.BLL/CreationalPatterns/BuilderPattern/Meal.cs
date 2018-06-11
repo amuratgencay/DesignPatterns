@@ -6,7 +6,6 @@ namespace DesignPattern.BLL.CreationalPatterns.BuilderPattern
 {
     public class Meal
     {
-        public string Name { get; set; }
         private readonly List<IPacking> _items = new List<IPacking>();
 
         public Meal(string name)
@@ -14,12 +13,13 @@ namespace DesignPattern.BLL.CreationalPatterns.BuilderPattern
             Name = name;
         }
 
+        public string Name { get; set; }
+        public double TotalCalories => _items.Sum(packing => packing.TotalCalories());
+
         public void AddPacking(IPacking item)
         {
             _items.Add(item);
         }
-
-        public double TotalCalories => _items.Sum(packing => packing.TotalCalories());
 
         public void ShowPacking()
         {
@@ -30,6 +30,5 @@ namespace DesignPattern.BLL.CreationalPatterns.BuilderPattern
             }
             Console.WriteLine("\tTotal Calories = " + TotalCalories.ToString("F"));
         }
-
     }
 }

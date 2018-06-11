@@ -1,5 +1,4 @@
-﻿using System;
-using DesignPattern.Entity.CreationalPatterns.BuilderPattern;
+﻿using DesignPattern.Entity.CreationalPatterns.BuilderPattern;
 
 namespace DesignPattern.BLL.CreationalPatterns.BuilderPattern
 {

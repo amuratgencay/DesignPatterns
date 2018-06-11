@@ -37,7 +37,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
@@ -52,6 +51,7 @@
     <Compile Include="CreationalPatterns\SingletonPattern\SingletonPatternExample.cs" />
     <Compile Include="StructuralPatterns\AdapterPattern\AdapterPatternExample.cs" />
     <Compile Include="StructuralPatterns\BridgePattern\BridgePatternExample.cs" />
+    <Compile Include="StructuralPatterns\DecoratorPattern\DecoratorPatternExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

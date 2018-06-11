@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using DesignPattern.Entity.StructuralPatterns.AdapterPattern;
 
 namespace DesignPattern.BLL.StructuralPatterns.AdapterPattern
@@ -20,6 +19,7 @@ namespace DesignPattern.BLL.StructuralPatterns.AdapterPattern
                     throw new ArgumentOutOfRangeException(nameof(compoundType), compoundType, null);
             }
         }
+
         public RichCompound GetCompound(string compoundType)
         {
             try
@@ -32,7 +32,6 @@ namespace DesignPattern.BLL.StructuralPatterns.AdapterPattern
             {
                 throw new ArgumentOutOfRangeException(nameof(compoundType), compoundType, null);
             }
-            
         }
     }
 }

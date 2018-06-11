@@ -14,13 +14,12 @@ namespace DesignPattern.ConsoleApp.StructuralPatterns.AdapterPattern
 
             Console.WriteLine("<Adapter Pattern Example>");
             Console.WriteLine();
-                Console.WriteLine(water);
-                Console.WriteLine(benzene);
-                Console.WriteLine(ethanol);
+            Console.WriteLine(water);
+            Console.WriteLine(benzene);
+            Console.WriteLine(ethanol);
             Console.WriteLine();
             Console.WriteLine("</Adapter Pattern Example>");
             Console.WriteLine();
-            
         }
     }
 }

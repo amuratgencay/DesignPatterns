@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPattern.Entity.CreationalPatterns.FactoryPattern
+﻿namespace DesignPattern.Entity.CreationalPatterns.FactoryPattern
 {
     public interface IShape
     {

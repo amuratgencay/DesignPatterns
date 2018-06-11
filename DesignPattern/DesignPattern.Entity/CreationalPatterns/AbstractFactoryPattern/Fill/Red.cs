@@ -1,10 +1,7 @@
-﻿using System;
-
-namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Fill
+﻿namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Fill
 {
     public class Red : IFill
     {
-
         public string Fill()
         {
             return "red";
@@ -12,8 +9,7 @@ namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Fill
 
         public override string ToString()
         {
-            return $"Shape filled with { Fill() }.";
+            return $"Shape filled with {Fill()}.";
         }
-        
     }
 }

@@ -1,10 +1,6 @@
-﻿using DesignPattern.BLL.StructuralPatterns.BridgePattern;
+﻿using System;
+using DesignPattern.BLL.StructuralPatterns.BridgePattern;
 using DesignPattern.Entity.StructuralPatterns.BridgePattern;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.ConsoleApp.StructuralPatterns.BridgePattern
 {
@@ -17,10 +13,10 @@ namespace DesignPattern.ConsoleApp.StructuralPatterns.BridgePattern
 
             Console.WriteLine("<Bridge Pattern Example>");
             Console.WriteLine();
-                Console.Write("\t");
-                redCircle.Draw();
-                Console.Write("\t");
-                blueRectangle.Draw();
+            Console.Write("\t");
+            redCircle.Draw();
+            Console.Write("\t");
+            blueRectangle.Draw();
             Console.WriteLine();
             Console.WriteLine("</Bridge Pattern Example>");
             Console.WriteLine();

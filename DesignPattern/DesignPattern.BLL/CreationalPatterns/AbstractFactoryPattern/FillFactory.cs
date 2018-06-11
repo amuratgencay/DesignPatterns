@@ -20,5 +20,4 @@ namespace DesignPattern.BLL.CreationalPatterns.AbstractFactoryPattern
             }
         }
     }
-
 }

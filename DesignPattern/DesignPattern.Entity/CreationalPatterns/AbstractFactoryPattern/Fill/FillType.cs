@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Fill
+﻿namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Fill
 {
     public enum FillType
     {
