@@ -8,12 +8,11 @@ namespace DesignPattern.BLL.CreationalPatterns.AbstractFactoryPattern
     {
         public IFactory<T, TEnum> GetFactory()
         {
-            if (typeof(TEnum) == typeof(ShapeType))
+            if (typeof (TEnum) == typeof (ShapeType))
                 return (IFactory<T, TEnum>) new ShapeFactory();
-            if (typeof(TEnum) == typeof(FillType))
+            if (typeof (TEnum) == typeof (FillType))
                 return (IFactory<T, TEnum>) new FillFactory();
-            throw new ArgumentOutOfRangeException(nameof(TEnum), typeof(TEnum), null);
+            throw new ArgumentOutOfRangeException(nameof(TEnum), typeof (TEnum), null);
         }
     }
 }
-

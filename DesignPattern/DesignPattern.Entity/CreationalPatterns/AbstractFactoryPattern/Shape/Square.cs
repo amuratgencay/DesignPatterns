@@ -1,19 +1,17 @@
-﻿using System;
-
-namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Shape
+﻿namespace DesignPattern.Entity.CreationalPatterns.AbstractFactoryPattern.Shape
 {
     public class Square : IShape
     {
-        public double Size { get; set; }
-
         public Square(double size)
         {
             Size = size;
-
         }
+
+        public double Size { get; set; }
+
         public double Area()
         {
-            return Size * Size;
+            return Size*Size;
         }
 
         public override string ToString()

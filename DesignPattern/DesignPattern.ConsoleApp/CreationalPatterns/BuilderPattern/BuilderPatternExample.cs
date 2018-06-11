@@ -33,10 +33,10 @@ namespace DesignPattern.ConsoleApp.CreationalPatterns.BuilderPattern
         {
             Console.WriteLine("<Builder Pattern Example>");
             Console.WriteLine();
-                PreparePastry().ShowPacking();
-                Console.WriteLine();
-                Console.WriteLine();
-                PreparePancake().ShowPacking();
+            PreparePastry().ShowPacking();
+            Console.WriteLine();
+            Console.WriteLine();
+            PreparePancake().ShowPacking();
             Console.WriteLine();
             Console.WriteLine("</Builder Pattern Example>");
             Console.WriteLine();

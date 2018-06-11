@@ -1,17 +1,21 @@
 ﻿using System;
-using DesignPattern.Entity.StructuralPatterns.BridgePattern;
+using DesignPattern.Entity.StructuralPatterns.DecoratorPattern;
 
-namespace DesignPattern.BLL.StructuralPatterns.BridgePattern
+namespace DesignPattern.BLL.StructuralPatterns.DecoratorPattern
 {
-    public class BlueShape : IDrawable
+    public class BlueShapeDecorator : ShapeDecorator
     {
-        public void Draw(Shape shape)
+        public BlueShapeDecorator(IDrawable decoratedShape) : base(decoratedShape)
+        {
+        }
+
+        public override void Draw()
         {
             var tmpForeground = Console.ForegroundColor;
             var tmpBackground = Console.BackgroundColor;
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.BackgroundColor = ConsoleColor.White;
-            Console.WriteLine("Blue: " + shape);
+            DecoratedShape.Draw();
             Console.ForegroundColor = tmpForeground;
             Console.BackgroundColor = tmpBackground;
         }

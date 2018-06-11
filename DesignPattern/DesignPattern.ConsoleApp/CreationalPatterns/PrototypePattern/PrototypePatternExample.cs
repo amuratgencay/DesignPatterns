@@ -9,10 +9,10 @@ namespace DesignPattern.ConsoleApp.CreationalPatterns.PrototypePattern
         {
             Console.WriteLine("<Prototype Pattern Example>");
             Console.WriteLine();
-                FibonacciCache.LoadCache();
-                Console.WriteLine("\t" + FibonacciCache.GetFibonacciNumber(3));
-                Console.WriteLine("\t" + FibonacciCache.GetFibonacciNumber(5));
-                Console.WriteLine("\t" + FibonacciCache.GetFibonacciNumber(7));
+            FibonacciCache.LoadCache();
+            Console.WriteLine("\t" + FibonacciCache.GetFibonacciNumber(3));
+            Console.WriteLine("\t" + FibonacciCache.GetFibonacciNumber(5));
+            Console.WriteLine("\t" + FibonacciCache.GetFibonacciNumber(7));
             Console.WriteLine();
             Console.WriteLine("</Prototype Pattern Example>");
             Console.WriteLine();

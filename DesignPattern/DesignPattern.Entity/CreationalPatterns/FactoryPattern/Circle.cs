@@ -4,16 +4,16 @@ namespace DesignPattern.Entity.CreationalPatterns.FactoryPattern
 {
     public class Circle : IShape
     {
-        public double Radius { get; set; }
-
         public Circle(double radius)
         {
             Radius = radius;
-
         }
+
+        public double Radius { get; set; }
+
         public double Area()
         {
-            return Math.PI * Radius * Radius;
+            return Math.PI*Radius*Radius;
         }
 
         public override string ToString()

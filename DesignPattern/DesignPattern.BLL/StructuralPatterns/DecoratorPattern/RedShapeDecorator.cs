@@ -1,17 +1,21 @@
 ﻿using System;
-using DesignPattern.Entity.StructuralPatterns.BridgePattern;
+using DesignPattern.Entity.StructuralPatterns.DecoratorPattern;
 
-namespace DesignPattern.BLL.StructuralPatterns.BridgePattern
+namespace DesignPattern.BLL.StructuralPatterns.DecoratorPattern
 {
-    public class RedShape : IDrawable
+    public class RedShapeDecorator : ShapeDecorator
     {
-        public void Draw(Shape shape)
+        public RedShapeDecorator(IDrawable decoratedShape) : base(decoratedShape)
+        {
+        }
+
+        public override void Draw()
         {
             var tmpForeground = Console.ForegroundColor;
             var tmpBackground = Console.BackgroundColor;
             Console.ForegroundColor = ConsoleColor.Red;
             Console.BackgroundColor = ConsoleColor.White;
-            Console.WriteLine("Red: " + shape);
+            DecoratedShape.Draw();
             Console.ForegroundColor = tmpForeground;
             Console.BackgroundColor = tmpBackground;
         }

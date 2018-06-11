@@ -18,7 +18,6 @@ namespace DesignPattern.BLL.CreationalPatterns.AbstractFactoryPattern
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
-        }       
+        }
     }
-
 }
