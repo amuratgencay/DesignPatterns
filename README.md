@@ -17,3 +17,4 @@
  4. Facade Pattern
  5. Flyweight Pattern
  6. Proxy Pattern
+ 7. Composite Pattern

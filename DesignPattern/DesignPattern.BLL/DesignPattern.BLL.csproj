@@ -59,6 +59,8 @@
     <Compile Include="StructuralPatterns\AdapterPattern\RichCompound.cs" />
     <Compile Include="StructuralPatterns\BridgePattern\BlueShape.cs" />
     <Compile Include="StructuralPatterns\BridgePattern\RedShape.cs" />
+    <Compile Include="StructuralPatterns\CompositePattern\CategoryManager.cs" />
+    <Compile Include="StructuralPatterns\CompositePattern\ProductGenerator.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\BlueShapeDecorator.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\RedShapeDecorator.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\ShapeDecorator.cs" />

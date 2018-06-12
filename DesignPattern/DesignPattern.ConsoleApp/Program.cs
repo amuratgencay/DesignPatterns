@@ -6,6 +6,7 @@ using DesignPattern.ConsoleApp.CreationalPatterns.PrototypePattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.SingletonPattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.AdapterPattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.BridgePattern;
+using DesignPattern.ConsoleApp.StructuralPatterns.CompositePattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.DecoratorPattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.FacadePattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.FlyweightPattern;
@@ -30,6 +31,7 @@ namespace DesignPattern.ConsoleApp
             FacadePatternExample.Run();
             FlyweightPatternExample.Run();
             ProxyPatternExample.Run();
+            CompositePatternExample.Run();
         }
     }
 }
