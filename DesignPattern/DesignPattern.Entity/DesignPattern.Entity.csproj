@@ -64,6 +64,8 @@
     <Compile Include="StructuralPatterns\BridgePattern\Circle.cs" />
     <Compile Include="StructuralPatterns\BridgePattern\Rectangle.cs" />
     <Compile Include="StructuralPatterns\BridgePattern\Shape.cs" />
+    <Compile Include="StructuralPatterns\CompositePattern\Category.cs" />
+    <Compile Include="StructuralPatterns\CompositePattern\Product.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\Circle.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\IDrawable.cs" />
     <Compile Include="StructuralPatterns\DecoratorPattern\Rectangle.cs" />
