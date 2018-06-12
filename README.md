@@ -15,3 +15,4 @@
  2. Bridge Pattern
  3. Decorator Pattern
  4. Facade Pattern
+ 5. Flyweight Pattern
