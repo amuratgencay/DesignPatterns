@@ -33,6 +33,7 @@ namespace DesignPattern.BLL.StructuralPatterns.ProxyPattern
                 _consoleWriter = new Writer(_writer);
             }
             _consoleWriter.Write(message);
+            _writer.Flush();
         }
     }
 }
