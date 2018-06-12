@@ -1,11 +1,6 @@
-﻿
+﻿using System;
 using DesignPattern.BLL.StructuralPatterns.ProxyPattern;
 using DesignPattern.Entity.StructuralPatterns.ProxyPattern;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.ConsoleApp.StructuralPatterns.FlyweightPattern
 {

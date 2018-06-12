@@ -1,17 +1,14 @@
-﻿using DesignPattern.Entity.StructuralPatterns.ProxyPattern;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DesignPattern.Entity.StructuralPatterns.ProxyPattern;
 
 namespace DesignPattern.BLL.StructuralPatterns.ProxyPattern
 {
     public class ProxyWriter : IWriter
     {
+        private readonly TextWriter _writer;
         private Writer _consoleWriter;
-        private TextWriter _writer;
+
         public ProxyWriter(WriterType writerType)
         {
             switch (writerType)
@@ -26,9 +23,10 @@ namespace DesignPattern.BLL.StructuralPatterns.ProxyPattern
                     break;
             }
         }
+
         public void Write(string message)
         {
-            if(_consoleWriter == null)
+            if (_consoleWriter == null)
             {
                 _consoleWriter = new Writer(_writer);
             }

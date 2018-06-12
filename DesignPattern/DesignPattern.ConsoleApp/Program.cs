@@ -10,6 +10,7 @@ using DesignPattern.ConsoleApp.StructuralPatterns.CompositePattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.DecoratorPattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.FacadePattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.FlyweightPattern;
+using DesignPattern.ConsoleApp.StructuralPatterns.PrivateClassDataPattern;
 
 namespace DesignPattern.ConsoleApp
 {
@@ -24,7 +25,7 @@ namespace DesignPattern.ConsoleApp
             BuilderPatternExample.Run();
             PrototypePatternExample.Run();
 
-            Console.WriteLine("Structural Patterns".PadLeft(50,'*').PadRight(80,'*'));
+            Console.WriteLine("Structural Patterns".PadLeft(50, '*').PadRight(80, '*'));
             AdapterPatternExample.Run();
             BridgePatternExample.Run();
             DecoratorPatternExample.Run();
@@ -32,6 +33,7 @@ namespace DesignPattern.ConsoleApp
             FlyweightPatternExample.Run();
             ProxyPatternExample.Run();
             CompositePatternExample.Run();
+            PrivateClassDataPattern.Run();
         }
     }
 }

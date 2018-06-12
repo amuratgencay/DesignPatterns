@@ -67,6 +67,10 @@
     <Compile Include="StructuralPatterns\FacadePattern\ShapeMaker.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\FlyweightShapes.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\ShapeFactory.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\Circle.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\Rectangle.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\Shape.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\ShapeMaker.cs" />
     <Compile Include="StructuralPatterns\ProxyPattern\ProxyWriter.cs" />
     <Compile Include="StructuralPatterns\ProxyPattern\WriterType.cs" />
   </ItemGroup>
