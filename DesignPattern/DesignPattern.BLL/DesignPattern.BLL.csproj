@@ -65,6 +65,8 @@
     <Compile Include="StructuralPatterns\FacadePattern\ShapeMaker.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\FlyweightShapes.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\ShapeFactory.cs" />
+    <Compile Include="StructuralPatterns\ProxyPattern\ProxyWriter.cs" />
+    <Compile Include="StructuralPatterns\ProxyPattern\WriterType.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DesignPattern.Entity\DesignPattern.Entity.csproj">

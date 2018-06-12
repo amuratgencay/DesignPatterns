@@ -16,3 +16,4 @@
  3. Decorator Pattern
  4. Facade Pattern
  5. Flyweight Pattern
+ 6. Proxy Pattern

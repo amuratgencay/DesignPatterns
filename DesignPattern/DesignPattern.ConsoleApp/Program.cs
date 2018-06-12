@@ -29,6 +29,7 @@ namespace DesignPattern.ConsoleApp
             DecoratorPatternExample.Run();
             FacadePatternExample.Run();
             FlyweightPatternExample.Run();
+            ProxyPatternExample.Run();
         }
     }
 }

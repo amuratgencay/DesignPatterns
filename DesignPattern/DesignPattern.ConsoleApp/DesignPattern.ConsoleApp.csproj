@@ -54,6 +54,7 @@
     <Compile Include="StructuralPatterns\DecoratorPattern\DecoratorPatternExample.cs" />
     <Compile Include="StructuralPatterns\FacadePattern\FacadePatternExample.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\FlyweightPatternExample.cs" />
+    <Compile Include="StructuralPatterns\ProxyPattern\ProxyPatternExample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
