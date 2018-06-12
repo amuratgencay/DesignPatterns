@@ -1,9 +1,5 @@
-﻿using DesignPattern.BLL.StructuralPatterns.FlyweightPattern;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using DesignPattern.BLL.StructuralPatterns.FlyweightPattern;
 
 namespace DesignPattern.ConsoleApp.StructuralPatterns.FlyweightPattern
 {
@@ -13,7 +9,7 @@ namespace DesignPattern.ConsoleApp.StructuralPatterns.FlyweightPattern
         {
             Console.WriteLine("<Flyweight Pattern Example>");
             Console.WriteLine();
-            for (int i = 0; i < 20; ++i)
+            for (var i = 0; i < 20; ++i)
             {
                 var circle = ShapeFactory.GetShape(FlyweightShapes.GetRandomColor());
                 circle.Draw();

@@ -1,9 +1,5 @@
-﻿using DesignPattern.BLL.StructuralPatterns.CompositePattern;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using DesignPattern.BLL.StructuralPatterns.CompositePattern;
 
 namespace DesignPattern.ConsoleApp.StructuralPatterns.CompositePattern
 {
@@ -11,9 +7,8 @@ namespace DesignPattern.ConsoleApp.StructuralPatterns.CompositePattern
     {
         public static void Run()
         {
-           
             Console.WriteLine("<Composite Pattern Example>");
-            Console.WriteLine();            
+            Console.WriteLine();
             ProductGenerator.GenerateProducts().ListCategories();
             Console.WriteLine();
             Console.WriteLine("</Composite Pattern Example>");

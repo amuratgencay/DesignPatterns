@@ -75,6 +75,12 @@
     <Compile Include="StructuralPatterns\FacadePattern\Square.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\Circle.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\IDrawable.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\CircleData.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\IDrawable.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\IMeasurable.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\RectangleData.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\ShapeData.cs" />
+    <Compile Include="StructuralPatterns\PrivateClassDataPattern\ShapeType.cs" />
     <Compile Include="StructuralPatterns\ProxyPattern\ConsoleWriter.cs" />
     <Compile Include="StructuralPatterns\ProxyPattern\IWriter.cs" />
   </ItemGroup>
