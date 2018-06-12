@@ -73,6 +73,8 @@
     <Compile Include="StructuralPatterns\FacadePattern\Square.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\Circle.cs" />
     <Compile Include="StructuralPatterns\FlyweightPattern\IDrawable.cs" />
+    <Compile Include="StructuralPatterns\ProxyPattern\ConsoleWriter.cs" />
+    <Compile Include="StructuralPatterns\ProxyPattern\IWriter.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
