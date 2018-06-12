@@ -8,6 +8,7 @@ using DesignPattern.ConsoleApp.StructuralPatterns.AdapterPattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.BridgePattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.DecoratorPattern;
 using DesignPattern.ConsoleApp.StructuralPatterns.FacadePattern;
+using DesignPattern.ConsoleApp.StructuralPatterns.FlyweightPattern;
 
 namespace DesignPattern.ConsoleApp
 {
@@ -27,6 +28,7 @@ namespace DesignPattern.ConsoleApp
             BridgePatternExample.Run();
             DecoratorPatternExample.Run();
             FacadePatternExample.Run();
+            FlyweightPatternExample.Run();
         }
     }
 }
