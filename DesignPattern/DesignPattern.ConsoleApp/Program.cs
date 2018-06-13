@@ -1,4 +1,5 @@
 ﻿using System;
+using DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.AbstractFactoryPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.BuilderPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.FactoryPattern;
@@ -34,6 +35,9 @@ namespace DesignPattern.ConsoleApp
             ProxyPatternExample.Run();
             CompositePatternExample.Run();
             PrivateClassDataPattern.Run();
+
+            Console.WriteLine("Behavioral Patterns".PadLeft(50, '*').PadRight(80, '*'));
+            ChainofResponsibilityPatternExample.Run();
         }
     }
 }

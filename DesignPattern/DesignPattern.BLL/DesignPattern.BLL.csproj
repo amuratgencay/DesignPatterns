@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BehavioralPatterns\ChainofResponsibilityPattern\ATM.cs" />
+    <Compile Include="BehavioralPatterns\ChainofResponsibilityPattern\Banknote.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\IAbstractFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FactoryProducer.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FillFactory.cs" />

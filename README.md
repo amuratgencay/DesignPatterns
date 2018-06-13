@@ -19,3 +19,4 @@
  6. Proxy Pattern
  7. Composite Pattern
  8. Private Class Data Pattern
+## Behavioral Design Patterns
