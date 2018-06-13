@@ -20,3 +20,4 @@
  7. Composite Pattern
  8. Private Class Data Pattern
 ## Behavioral Design Patterns
+ 1. Chain of Responsibility Pattern

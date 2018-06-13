@@ -11,14 +11,30 @@ namespace DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPatte
     {
         public static void Run()
         {
-            var atm = new ATM(new List<Banknote> { new Banknote(200, 3), new Banknote(100, 5), new Banknote(50, 25), new Banknote(20, 30), new Banknote(10, 100), new Banknote(5, 150), new Banknote(1, 200) });
+            var atm = new ATM(
+                new List<Banknote>
+                {
+                    new Banknote(200, 2),
+                    new Banknote(100, 3),
+                    new Banknote(50, 4),
+                    new Banknote(20, 30),
+                    new Banknote(10, 50),
+                    new Banknote(5, 60),
+                    new Banknote(1, 200)
+                });
+            var amount = 1375;
             Console.WriteLine("<Chain of Responsibility Pattern Example>");
             Console.WriteLine();
-            foreach (var item in atm.GetMoney(1375))
+            Console.WriteLine("\tTotal Amount: " + atm.TotalAmount());
+            Console.WriteLine("\tRequested Amount: " + amount);
+            Console.WriteLine();
+            foreach (var item in atm.GetMoney(amount))
             {
-                
-                Console.WriteLine("\t" + item.Count + "x" + item.Amount  );
+
+                Console.WriteLine("\t\t" + item.Count + "x" + item.Amount);
             }
+            Console.WriteLine();
+            Console.WriteLine("\tTotal Amount: " + atm.TotalAmount());
             Console.WriteLine();
             Console.WriteLine("</Chain of Responsibility Pattern Example>");
             Console.WriteLine();
