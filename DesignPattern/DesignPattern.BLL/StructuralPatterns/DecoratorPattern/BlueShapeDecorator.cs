@@ -11,13 +11,10 @@ namespace DesignPattern.BLL.StructuralPatterns.DecoratorPattern
 
         public override void Draw()
         {
-            var tmpForeground = Console.ForegroundColor;
-            var tmpBackground = Console.BackgroundColor;
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.BackgroundColor = ConsoleColor.White;
             DecoratedShape.Draw();
-            Console.ForegroundColor = tmpForeground;
-            Console.BackgroundColor = tmpBackground;
+            Console.ResetColor();
         }
     }
 }

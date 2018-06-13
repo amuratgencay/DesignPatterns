@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BehavioralPatterns\ChainofResponsibilityPattern\ChainofResponsibilityPatternExample.cs" />
+    <Compile Include="BehavioralPatterns\CommandPattern\CommandPatternExample.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\AbstractFactoryPatternExample.cs" />
     <Compile Include="CreationalPatterns\BuilderPattern\BuilderPatternExample.cs" />
     <Compile Include="CreationalPatterns\FactoryPattern\FactoryPatternExample.cs" />

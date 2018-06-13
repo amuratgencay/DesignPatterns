@@ -1,9 +1,6 @@
-﻿using DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern;
 
 namespace DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPattern
 {
@@ -30,7 +27,6 @@ namespace DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPatte
             Console.WriteLine();
             foreach (var item in atm.GetMoney(amount))
             {
-
                 Console.WriteLine("\t\t" + item.Count + "x" + item.Amount);
             }
             Console.WriteLine();

@@ -2,6 +2,6 @@
 {
     public class Money
     {
-        public int Amount { get; set; }        
+        public int Amount { get; set; }
     }
 }

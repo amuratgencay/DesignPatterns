@@ -27,7 +27,7 @@ namespace DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern
             var res = 0;
             for (var i = banknote; i != null; i = i.Next)
             {
-                res += i.Count * i.Amount;
+                res += i.Count*i.Amount;
             }
             return res;
         }
@@ -65,6 +65,5 @@ namespace DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern
 
             return res;
         }
-
     }
 }
