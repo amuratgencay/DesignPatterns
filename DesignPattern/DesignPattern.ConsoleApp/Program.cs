@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPattern;
+using DesignPattern.ConsoleApp.BehavioralPatterns.CommandPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.AbstractFactoryPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.BuilderPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.FactoryPattern;
@@ -38,6 +39,7 @@ namespace DesignPattern.ConsoleApp
 
             Console.WriteLine("Behavioral Patterns".PadLeft(50, '*').PadRight(80, '*'));
             ChainofResponsibilityPatternExample.Run();
+            CommandPatternExample.Run();
         }
     }
 }

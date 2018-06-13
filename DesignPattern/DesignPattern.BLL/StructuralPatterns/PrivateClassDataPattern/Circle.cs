@@ -14,26 +14,21 @@ namespace DesignPattern.BLL.StructuralPatterns.PrivateClassDataPattern
 
         public override void Draw()
         {
-            var tmpForeground = Console.ForegroundColor;
-            var tmpBackground = Console.BackgroundColor;
             Console.Write("\t");
             Console.ForegroundColor = _circleData.Color;
             Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine(_circleData);
-            Console.ForegroundColor = tmpForeground;
-            Console.BackgroundColor = tmpBackground;
+            Console.ResetColor();
             Console.Write("\t\t");
             Console.ForegroundColor = _circleData.Color;
             Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Area: " + Area());
-            Console.ForegroundColor = tmpForeground;
-            Console.BackgroundColor = tmpBackground;
+            Console.ResetColor();
             Console.Write("\t\t");
             Console.ForegroundColor = _circleData.Color;
             Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Circumference: " + Circumference());
-            Console.ForegroundColor = tmpForeground;
-            Console.BackgroundColor = tmpBackground;
+            Console.ResetColor();
         }
 
         public override double Area() => Math.PI*_circleData.Radius*_circleData.Radius;

@@ -40,6 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BehavioralPatterns\ChainofResponsibilityPattern\Money.cs" />
+    <Compile Include="BehavioralPatterns\CommandPattern\Div.cs" />
+    <Compile Include="BehavioralPatterns\CommandPattern\IOperator.cs" />
+    <Compile Include="BehavioralPatterns\CommandPattern\Mul.cs" />
+    <Compile Include="BehavioralPatterns\CommandPattern\OperatorType.cs" />
+    <Compile Include="BehavioralPatterns\CommandPattern\Sub.cs" />
+    <Compile Include="BehavioralPatterns\CommandPattern\Sum.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Blue.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\FillType.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Circle.cs" />

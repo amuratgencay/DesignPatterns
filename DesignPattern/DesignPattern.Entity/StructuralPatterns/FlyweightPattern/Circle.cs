@@ -13,14 +13,11 @@ namespace DesignPattern.Entity.StructuralPatterns.FlyweightPattern
 
         public void Draw()
         {
-            var tmpForeground = Console.ForegroundColor;
-            var tmpBackground = Console.BackgroundColor;
             Console.Write("\t");
             Console.ForegroundColor = Color;
             Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Circle");
-            Console.ForegroundColor = tmpForeground;
-            Console.BackgroundColor = tmpBackground;
+            Console.ResetColor();        
         }
     }
 }
