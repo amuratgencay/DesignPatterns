@@ -1,18 +1,14 @@
 ﻿using DesignPattern.Entity.BehavioralPatterns.ChainofResponsibilityPattern;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern
 {
-    public class Banknote
+    public class Banknote : Money
     {
         private readonly List<Money> Moneys = new List<Money>();
         public Banknote Next { get; set; }
 
-        public int Amount { get; private set; }
         public int Count => Moneys.Count;
 
         public Banknote(int amount, int count)
@@ -22,6 +18,7 @@ namespace DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern
             {
                 Moneys.Add(new Money { Amount = amount });
             }
+            
         }
 
         public void AddNext(Banknote next)
@@ -35,11 +32,13 @@ namespace DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern
                 Next.AddNext(next);
             }
         }
+
         public void AddMoney(Money money)
         {
             Moneys.Add(money);
         }
-        public Money GetMoney()
+
+        public Money TakeMoney()
         {
             var money = Moneys.FirstOrDefault();
             Moneys.Remove(money);
