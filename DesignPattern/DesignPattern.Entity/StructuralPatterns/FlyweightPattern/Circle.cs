@@ -17,7 +17,7 @@ namespace DesignPattern.Entity.StructuralPatterns.FlyweightPattern
             Console.ForegroundColor = Color;
             Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine("Circle");
-            Console.ResetColor();        
+            Console.ResetColor();
         }
     }
 }

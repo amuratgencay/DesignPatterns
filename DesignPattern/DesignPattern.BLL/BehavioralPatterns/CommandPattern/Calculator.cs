@@ -1,28 +1,27 @@
 using System;
-using System.Linq;
+using System.Collections.Generic;
 using DesignPattern.Entity.BehavioralPatterns.CommandPattern;
 
 namespace DesignPattern.BLL.BehavioralPatterns.CommandPattern
 {
     public class Calculator
     {
-        public double Calculate(string expression)
-        {
-            var operatorFactory = new OperatorFactory();
-            var operators = "+-*/";
+        private readonly List<IOperator> _operators = new List<IOperator>();
 
-            for (var i = 0; i < expression.Length; i++)
+        public void AddOperation(IOperator operation)
+        {
+            _operators.Add(operation);
+        }
+
+        public Number Calculate()
+        {
+            Number res = null;
+            foreach (var item in _operators)
             {
-                var c = expression[i];
-                if (operators.Contains(c))
-                {
-                    var operatorType = (OperatorType) c;
-                    var op1 = Convert.ToDouble(expression.Substring(0, i).Trim());
-                    var op2 = Convert.ToDouble(expression.Remove(0, i + 1).Trim());
-                    return operatorFactory.GetOperator(operatorType).Operate(op1, op2);
-                }
+                res = item.Operate();
+                Console.WriteLine("\t" + item.GetType().Name + " -> " + res);
             }
-            return 0;
+            return res;
         }
     }
 }
