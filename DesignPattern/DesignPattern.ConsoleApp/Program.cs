@@ -1,4 +1,5 @@
 ﻿using System;
+using DesignPattern.BLL.BehavioralPatterns.MediatorPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.CommandPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.InterpreterPattern;
@@ -22,7 +23,7 @@ namespace DesignPattern.ConsoleApp
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Creational Patterns".PadLeft(50, '*').PadRight(80, '*'));
+            /*Console.WriteLine("Creational Patterns".PadLeft(50, '*').PadRight(80, '*'));
             FactoryPatternExample.Run();
             AbstractFactoryPatternExample.Run();
             SingletonPatternExample.Run();
@@ -43,7 +44,9 @@ namespace DesignPattern.ConsoleApp
             ChainofResponsibilityPatternExample.Run();
             CommandPatternExample.Run();
             InterpreterPatternExample.Run();
-            IteratorPatternExample.Run();
+            IteratorPatternExample.Run();*/
+            MediatorPatternExample.Run();
+
         }
     }
 }
