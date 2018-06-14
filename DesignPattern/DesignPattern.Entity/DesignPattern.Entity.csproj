@@ -46,6 +46,8 @@
     <Compile Include="BehavioralPatterns\CommandPattern\OperatorType.cs" />
     <Compile Include="BehavioralPatterns\CommandPattern\Sub.cs" />
     <Compile Include="BehavioralPatterns\CommandPattern\Sum.cs" />
+    <Compile Include="BehavioralPatterns\InterpreterPattern\Context.cs" />
+    <Compile Include="BehavioralPatterns\InterpreterPattern\Expression.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Blue.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\FillType.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Circle.cs" />
