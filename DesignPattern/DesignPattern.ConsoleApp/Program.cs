@@ -2,6 +2,7 @@
 using DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.CommandPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.InterpreterPattern;
+using DesignPattern.ConsoleApp.BehavioralPatterns.IteratorPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.AbstractFactoryPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.BuilderPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.FactoryPattern;
@@ -42,6 +43,7 @@ namespace DesignPattern.ConsoleApp
             ChainofResponsibilityPatternExample.Run();
             CommandPatternExample.Run();
             InterpreterPatternExample.Run();
+            IteratorPatternExample.Run();
         }
     }
 }

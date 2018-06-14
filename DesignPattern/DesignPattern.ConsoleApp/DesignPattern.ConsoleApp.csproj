@@ -45,6 +45,7 @@
     <Compile Include="BehavioralPatterns\ChainofResponsibilityPattern\ChainofResponsibilityPatternExample.cs" />
     <Compile Include="BehavioralPatterns\CommandPattern\CommandPatternExample.cs" />
     <Compile Include="BehavioralPatterns\InterpreterPattern\InterpreterPatternExample.cs" />
+    <Compile Include="BehavioralPatterns\IteratorPattern\IteratorPatternExample.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\AbstractFactoryPatternExample.cs" />
     <Compile Include="CreationalPatterns\BuilderPattern\BuilderPatternExample.cs" />
     <Compile Include="CreationalPatterns\FactoryPattern\FactoryPatternExample.cs" />
