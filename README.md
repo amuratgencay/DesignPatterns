@@ -22,3 +22,4 @@
 ## Behavioral Design Patterns
  1. Chain of Responsibility Pattern
  2. Command Pattern
+ 3. Interpreter Pattern

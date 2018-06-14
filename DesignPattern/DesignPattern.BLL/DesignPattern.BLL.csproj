@@ -42,6 +42,10 @@
     <Compile Include="BehavioralPatterns\ChainofResponsibilityPattern\ATM.cs" />
     <Compile Include="BehavioralPatterns\ChainofResponsibilityPattern\Banknote.cs" />
     <Compile Include="BehavioralPatterns\CommandPattern\Calculator.cs" />
+    <Compile Include="BehavioralPatterns\InterpreterPattern\HundredExpression.cs" />
+    <Compile Include="BehavioralPatterns\InterpreterPattern\OneExpression.cs" />
+    <Compile Include="BehavioralPatterns\InterpreterPattern\TenExpression.cs" />
+    <Compile Include="BehavioralPatterns\InterpreterPattern\ThousandExpression.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\IAbstractFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FactoryProducer.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FillFactory.cs" />
