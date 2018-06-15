@@ -51,6 +51,7 @@
     <Compile Include="BehavioralPatterns\MementoPattern\MementoPattern.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\View.cs" />
     <Compile Include="BehavioralPatterns\StatePattern\Context.cs" />
+    <Compile Include="BehavioralPatterns\StrategyPattern\PrimeStrategy.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\IAbstractFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FactoryProducer.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FillFactory.cs" />

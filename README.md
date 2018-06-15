@@ -28,3 +28,4 @@
  6. Memento Pattern
  7. Observer Pattern
  8. State Pattern
+ 9. Strategy Pattern
