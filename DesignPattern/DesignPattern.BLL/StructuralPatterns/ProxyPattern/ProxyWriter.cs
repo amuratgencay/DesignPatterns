@@ -26,10 +26,7 @@ namespace DesignPattern.BLL.StructuralPatterns.ProxyPattern
 
         public void Write(string message)
         {
-            if (_consoleWriter == null)
-            {
-                _consoleWriter = new Writer(_writer);
-            }
+            if (_consoleWriter == null) _consoleWriter = new Writer(_writer);
             _consoleWriter.Write(message);
             _writer.Flush();
         }

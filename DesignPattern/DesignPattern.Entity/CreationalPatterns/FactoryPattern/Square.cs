@@ -11,7 +11,7 @@
 
         public double Area()
         {
-            return Size*Size;
+            return Size * Size;
         }
 
         public override string ToString()

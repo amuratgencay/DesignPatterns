@@ -24,10 +24,7 @@ namespace DesignPattern.BLL.CreationalPatterns.BuilderPattern
         public void ShowPacking()
         {
             Console.WriteLine("\t" + Name);
-            foreach (var packing in _items)
-            {
-                Console.WriteLine("\t\t" + packing);
-            }
+            foreach (var packing in _items) Console.WriteLine("\t\t" + packing);
             Console.WriteLine("\tTotal Calories = " + TotalCalories.ToString("F"));
         }
     }

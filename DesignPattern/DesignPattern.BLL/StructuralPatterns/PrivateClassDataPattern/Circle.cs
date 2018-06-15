@@ -31,7 +31,14 @@ namespace DesignPattern.BLL.StructuralPatterns.PrivateClassDataPattern
             Console.ResetColor();
         }
 
-        public override double Area() => Math.PI*_circleData.Radius*_circleData.Radius;
-        public override double Circumference() => 2*Math.PI*_circleData.Radius;
+        public override double Area()
+        {
+            return Math.PI * _circleData.Radius * _circleData.Radius;
+        }
+
+        public override double Circumference()
+        {
+            return 2 * Math.PI * _circleData.Radius;
+        }
     }
 }

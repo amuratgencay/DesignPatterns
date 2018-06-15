@@ -24,3 +24,4 @@
  2. Command Pattern
  3. Interpreter Pattern
  4. Iterator Pattern
+ 5. Mediator Pattern

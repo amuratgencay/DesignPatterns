@@ -25,10 +25,7 @@ namespace DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPatte
             Console.WriteLine("\tTotal Amount: " + atm.TotalAmount());
             Console.WriteLine("\tRequested Amount: " + amount);
             Console.WriteLine();
-            foreach (var item in atm.GetMoney(amount))
-            {
-                Console.WriteLine("\t\t" + item.Count + "x" + item.Amount);
-            }
+            foreach (var item in atm.GetMoney(amount)) Console.WriteLine("\t\t" + item.Count + "x" + item.Amount);
             Console.WriteLine();
             Console.WriteLine("\tTotal Amount: " + atm.TotalAmount());
             Console.WriteLine();

@@ -44,7 +44,7 @@ namespace DesignPattern.Entity.BehavioralPatterns.IteratorPattern
 
             public bool HasNext()
             {
-                return (_index < _list.Count);
+                return _index < _list.Count;
             }
 
             public T Next()

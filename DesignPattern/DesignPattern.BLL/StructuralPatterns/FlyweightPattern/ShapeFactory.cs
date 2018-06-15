@@ -16,6 +16,7 @@ namespace DesignPattern.BLL.StructuralPatterns.FlyweightPattern
                 Console.WriteLine(color + " created");
                 _drawableDictionary.Add(color, new Circle(color));
             }
+
             return _drawableDictionary[color];
         }
     }
