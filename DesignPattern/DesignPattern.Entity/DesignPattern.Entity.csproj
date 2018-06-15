@@ -60,6 +60,7 @@
     <Compile Include="BehavioralPatterns\ObserverPattern\Hexa.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\View.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\Octal.cs" />
+    <Compile Include="BehavioralPatterns\StatePattern\Node.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Blue.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\FillType.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Circle.cs" />
