@@ -29,3 +29,4 @@
  7. Observer Pattern
  8. State Pattern
  9. Strategy Pattern
+ 10.Template Pattern

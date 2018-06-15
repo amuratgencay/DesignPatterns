@@ -52,6 +52,9 @@
     <Compile Include="BehavioralPatterns\ObserverPattern\View.cs" />
     <Compile Include="BehavioralPatterns\StatePattern\Context.cs" />
     <Compile Include="BehavioralPatterns\StrategyPattern\PrimeStrategy.cs" />
+    <Compile Include="BehavioralPatterns\TemplatePattern\SortAsc.cs" />
+    <Compile Include="BehavioralPatterns\TemplatePattern\SortDesc.cs" />
+    <Compile Include="BehavioralPatterns\TemplatePattern\TemplateList.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\IAbstractFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FactoryProducer.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FillFactory.cs" />

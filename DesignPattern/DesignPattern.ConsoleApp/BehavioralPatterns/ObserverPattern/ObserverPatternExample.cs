@@ -38,9 +38,9 @@ namespace DesignPattern.ConsoleApp.BehavioralPatterns.ObserverPattern
 
 
             view.State = 15;
-            Thread.Sleep(1000);
+            Thread.Sleep(200);
             view.State = 10;
-            Thread.Sleep(1000);
+            Thread.Sleep(200);
             view.State = 7;
             Console.WriteLine();
             Console.WriteLine("</Observer Pattern Example>");
