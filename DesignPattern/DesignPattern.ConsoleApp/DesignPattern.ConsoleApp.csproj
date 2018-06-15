@@ -50,6 +50,7 @@
     <Compile Include="BehavioralPatterns\MementoPattern\MementoPatternExample.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\ObserverPatternExample.cs" />
     <Compile Include="BehavioralPatterns\StatePattern\StatePatternExample.cs" />
+    <Compile Include="BehavioralPatterns\StrategyPattern\StrategyPatternExample.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\AbstractFactoryPatternExample.cs" />
     <Compile Include="CreationalPatterns\BuilderPattern\BuilderPatternExample.cs" />
     <Compile Include="CreationalPatterns\FactoryPattern\FactoryPatternExample.cs" />
