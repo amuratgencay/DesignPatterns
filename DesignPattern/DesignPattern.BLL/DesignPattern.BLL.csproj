@@ -48,6 +48,7 @@
     <Compile Include="BehavioralPatterns\InterpreterPattern\ThousandExpression.cs" />
     <Compile Include="BehavioralPatterns\IteratorPattern\NameRepository.cs" />
     <Compile Include="BehavioralPatterns\MediatorPattern\ChatRoom.cs" />
+    <Compile Include="BehavioralPatterns\MementoPattern\MementoPattern.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\IAbstractFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FactoryProducer.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FillFactory.cs" />

@@ -53,6 +53,7 @@
     <Compile Include="BehavioralPatterns\IteratorPattern\IIterator.cs" />
     <Compile Include="BehavioralPatterns\MediatorPattern\IChatRoom.cs" />
     <Compile Include="BehavioralPatterns\MediatorPattern\Participant.cs" />
+    <Compile Include="BehavioralPatterns\MementoPattern\Memento.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Blue.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\FillType.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Circle.cs" />
