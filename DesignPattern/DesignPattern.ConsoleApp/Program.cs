@@ -5,6 +5,7 @@ using DesignPattern.ConsoleApp.BehavioralPatterns.InterpreterPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.IteratorPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.MediatorPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.MementoPattern;
+using DesignPattern.ConsoleApp.BehavioralPatterns.ObserverPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.AbstractFactoryPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.BuilderPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.FactoryPattern;
@@ -48,6 +49,7 @@ namespace DesignPattern.ConsoleApp
             IteratorPatternExample.Run();
             MediatorPatternExample.Run();
             MementoPatternExample.Run();
+            ObserverPatternExample.Run();
         }
     }
 }

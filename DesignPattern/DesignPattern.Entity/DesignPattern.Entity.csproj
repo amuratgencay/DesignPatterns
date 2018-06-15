@@ -54,6 +54,12 @@
     <Compile Include="BehavioralPatterns\MediatorPattern\IChatRoom.cs" />
     <Compile Include="BehavioralPatterns\MediatorPattern\Participant.cs" />
     <Compile Include="BehavioralPatterns\MementoPattern\Memento.cs" />
+    <Compile Include="BehavioralPatterns\ObserverPattern\Binary.cs" />
+    <Compile Include="BehavioralPatterns\ObserverPattern\ConsoleWriter.cs" />
+    <Compile Include="BehavioralPatterns\ObserverPattern\Element.cs" />
+    <Compile Include="BehavioralPatterns\ObserverPattern\Hexa.cs" />
+    <Compile Include="BehavioralPatterns\ObserverPattern\View.cs" />
+    <Compile Include="BehavioralPatterns\ObserverPattern\Octal.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Blue.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\FillType.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Circle.cs" />

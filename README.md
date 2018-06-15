@@ -26,3 +26,4 @@
  4. Iterator Pattern
  5. Mediator Pattern
  6. Memento Pattern
+ 7. Observer Pattern
