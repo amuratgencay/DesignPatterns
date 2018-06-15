@@ -8,6 +8,7 @@ using DesignPattern.ConsoleApp.BehavioralPatterns.MementoPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.ObserverPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.StatePattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.StrategyPattern;
+using DesignPattern.ConsoleApp.BehavioralPatterns.TemplatePattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.AbstractFactoryPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.BuilderPattern;
 using DesignPattern.ConsoleApp.CreationalPatterns.FactoryPattern;
@@ -54,6 +55,7 @@ namespace DesignPattern.ConsoleApp
             ObserverPatternExample.Run();
             StatePatternExample.Run();
             StrategyPatternExample.Run();
+            TemplatePatternExample.Run();
         }
     }
 }
