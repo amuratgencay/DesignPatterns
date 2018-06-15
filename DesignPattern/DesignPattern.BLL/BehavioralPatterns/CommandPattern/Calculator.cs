@@ -21,6 +21,7 @@ namespace DesignPattern.BLL.BehavioralPatterns.CommandPattern
                 res = item.Operate();
                 Console.WriteLine("\t" + item.GetType().Name + " -> " + res);
             }
+
             return res;
         }
     }

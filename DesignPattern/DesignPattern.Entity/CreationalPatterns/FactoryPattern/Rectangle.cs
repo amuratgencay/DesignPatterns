@@ -13,7 +13,7 @@
 
         public double Area()
         {
-            return Width*Height;
+            return Width * Height;
         }
 
         public override string ToString()

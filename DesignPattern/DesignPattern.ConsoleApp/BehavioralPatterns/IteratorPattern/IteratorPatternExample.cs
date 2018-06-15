@@ -12,10 +12,7 @@ namespace DesignPattern.ConsoleApp.BehavioralPatterns.IteratorPattern
 
             Console.WriteLine("<Iterator Pattern Example>");
             Console.WriteLine();
-            while (iterator.HasNext())
-            {
-                Console.WriteLine("\t" + iterator.Next());
-            }
+            while (iterator.HasNext()) Console.WriteLine("\t" + iterator.Next());
             Console.WriteLine();
             Console.WriteLine("</Iterator Pattern Example>");
             Console.WriteLine();

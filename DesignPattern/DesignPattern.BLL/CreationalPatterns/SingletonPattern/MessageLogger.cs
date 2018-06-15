@@ -34,10 +34,7 @@ namespace DesignPattern.BLL.CreationalPatterns.SingletonPattern
 
         public void DisplayLogs()
         {
-            foreach (var messageLog in _messageLogs)
-            {
-                Console.WriteLine("\t" + messageLog);
-            }
+            foreach (var messageLog in _messageLogs) Console.WriteLine("\t" + messageLog);
         }
     }
 }

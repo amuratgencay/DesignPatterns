@@ -14,6 +14,7 @@ namespace DesignPattern.ConsoleApp.StructuralPatterns.FlyweightPattern
                 var circle = ShapeFactory.GetShape(FlyweightShapes.GetRandomColor());
                 circle.Draw();
             }
+
             Console.WriteLine();
             Console.WriteLine("</Flyweight Pattern Example>");
             Console.WriteLine();

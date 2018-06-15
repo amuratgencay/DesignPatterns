@@ -11,10 +11,7 @@ namespace DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern
         public Banknote(int amount, int count)
         {
             Amount = amount;
-            for (var i = 0; i < count; i++)
-            {
-                Moneys.Add(new Money {Amount = amount});
-            }
+            for (var i = 0; i < count; i++) Moneys.Add(new Money {Amount = amount});
         }
 
         public Banknote Next { get; set; }
@@ -23,13 +20,9 @@ namespace DesignPattern.BLL.BehavioralPatterns.ChainofResponsibilityPattern
         public void AddNext(Banknote next)
         {
             if (Next == null)
-            {
                 Next = next;
-            }
             else
-            {
                 Next.AddNext(next);
-            }
         }
 
         public void AddMoney(Money money)

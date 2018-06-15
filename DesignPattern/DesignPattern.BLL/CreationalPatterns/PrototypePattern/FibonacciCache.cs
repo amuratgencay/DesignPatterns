@@ -20,6 +20,7 @@ namespace DesignPattern.BLL.CreationalPatterns.PrototypePattern
                     _fibonacciCache.Add(i + 1, new FibonacciNumber(i + 1, fib.Value, fib.First));
                 }
             }
+
             var value = (FibonacciNumber) _fibonacciCache[num].Clone();
             return value;
         }

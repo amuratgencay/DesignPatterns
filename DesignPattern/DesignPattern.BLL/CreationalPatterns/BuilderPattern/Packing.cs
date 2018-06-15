@@ -7,7 +7,11 @@ namespace DesignPattern.BLL.CreationalPatterns.BuilderPattern
         protected double Factor { get; set; }
         public double Amount { get; set; }
         public Food Food { get; set; }
-        public double TotalCalories() => Amount*((Food.Calorie*Factor)/Food.DefaultWeight);
+
+        public double TotalCalories()
+        {
+            return Amount * (Food.Calorie * Factor / Food.DefaultWeight);
+        }
 
         public override string ToString()
         {

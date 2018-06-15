@@ -31,7 +31,14 @@ namespace DesignPattern.BLL.StructuralPatterns.PrivateClassDataPattern
             Console.ResetColor();
         }
 
-        public override double Area() => _rectangleData.Width*_rectangleData.Height;
-        public override double Circumference() => 2*(_rectangleData.Height + _rectangleData.Width);
+        public override double Area()
+        {
+            return _rectangleData.Width * _rectangleData.Height;
+        }
+
+        public override double Circumference()
+        {
+            return 2 * (_rectangleData.Height + _rectangleData.Width);
+        }
     }
 }

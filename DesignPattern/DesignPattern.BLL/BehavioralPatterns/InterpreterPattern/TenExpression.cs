@@ -4,10 +4,29 @@ namespace DesignPattern.BLL.BehavioralPatterns.InterpreterPattern
 {
     public class TenExpression : Expression
     {
-        protected override string One() => "X";
-        protected override string Four() => "XL";
-        protected override string Five() => "L";
-        protected override string Nine() => "XC";
-        protected override int Multiplier() => 10;
+        protected override string One()
+        {
+            return "X";
+        }
+
+        protected override string Four()
+        {
+            return "XL";
+        }
+
+        protected override string Five()
+        {
+            return "L";
+        }
+
+        protected override string Nine()
+        {
+            return "XC";
+        }
+
+        protected override int Multiplier()
+        {
+            return 10;
+        }
     }
 }
