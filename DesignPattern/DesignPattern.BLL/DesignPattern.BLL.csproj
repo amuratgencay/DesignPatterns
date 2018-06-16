@@ -49,6 +49,7 @@
     <Compile Include="BehavioralPatterns\IteratorPattern\NameRepository.cs" />
     <Compile Include="BehavioralPatterns\MediatorPattern\ChatRoom.cs" />
     <Compile Include="BehavioralPatterns\MementoPattern\MementoPattern.cs" />
+    <Compile Include="BehavioralPatterns\NullObjectPattern\CustomerRepository.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\View.cs" />
     <Compile Include="BehavioralPatterns\StatePattern\Context.cs" />
     <Compile Include="BehavioralPatterns\StrategyPattern\PrimeStrategy.cs" />

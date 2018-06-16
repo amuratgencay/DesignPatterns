@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Text;
 using DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.CommandPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.InterpreterPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.IteratorPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.MediatorPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.MementoPattern;
+using DesignPattern.ConsoleApp.BehavioralPatterns.NullObjectPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.ObserverPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.StatePattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.StrategyPattern;
@@ -31,11 +33,13 @@ namespace DesignPattern.ConsoleApp
         {
             while (true)
             {
-                Console.WriteLine("1.Creational Patterns");
-                Console.WriteLine("2.Structural Patterns");
-                Console.WriteLine("3.Behavioral Patterns");
-                Console.WriteLine("Press q for exit.");
-                var choice = Console.ReadKey().KeyChar;
+                //╔ ╩ ╦ ╠ ═ ╬ ╣ ║ ╗ ╝ ╚
+                Console.WriteLine("╔═══════════════════════════════════╦═════════════════╗");
+                Console.WriteLine("║          Design Patterns          ║     X. Exit     ║");
+                Console.WriteLine("╠═════════════════╦═════════════════╬═════════════════╣");
+                Console.WriteLine("║  1. Creational  ║  2. Structural  ║  3. Behavioral  ║");
+                Console.WriteLine("╚═════════════════╩═════════════════╩═════════════════╝");
+                var choice = char.ToLower(Console.ReadKey().KeyChar);
                 Console.Clear();
                 var done = false;
                 switch (choice)
@@ -43,13 +47,12 @@ namespace DesignPattern.ConsoleApp
                     case '1':
                         while (!done)
                         {
-                            Console.WriteLine("1. FactoryPatternExample");
-                            Console.WriteLine("2. AbstractFactoryPatternExample");
-                            Console.WriteLine("3. SingletonPatternExample");
-                            Console.WriteLine("4. BuilderPatternExample");
-                            Console.WriteLine("5. PrototypePatternExample");
-                            Console.WriteLine("Press q for exit.");
-                            choice = Console.ReadKey().KeyChar;
+                            Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╦═════════════════════╗");
+                            Console.WriteLine("║                                   Creational Design Patterns                          ║       P. Back       ║");
+                            Console.WriteLine("╠═════════════════════╦═════════════════════╦═════════════════════╦═════════════════════╬═════════════════════╣");
+                            Console.WriteLine("║     1. Factory      ║ 2. Abstract Factory ║    3. Singleton     ║     4. Builder      ║    5. Prototype     ║");
+                            Console.WriteLine("╚═════════════════════╩═════════════════════╩═════════════════════╩═════════════════════╩═════════════════════╝");
+                            choice = char.ToLower(Console.ReadKey().KeyChar);
                             Console.Clear();
                             switch (choice)
                             {
@@ -68,11 +71,11 @@ namespace DesignPattern.ConsoleApp
                                 case '5':
                                     PrototypePatternExample.Run();
                                     break;
-                                case 'q':
+                                case 'p':
                                     done = true;
                                     break;
                                 default:
-                                    Console.WriteLine("Choice range (1-5) or q for previous menu. ");
+                                    Console.WriteLine("Choice range (1-5) or P for previous menu. ");
                                     break;
                             }
                         }
@@ -80,16 +83,14 @@ namespace DesignPattern.ConsoleApp
                     case '2':
                         while (!done)
                         {
-                            Console.WriteLine("1. AdapterPatternExample");
-                            Console.WriteLine("2. BridgePatternExample");
-                            Console.WriteLine("3. DecoratorPatternExample");
-                            Console.WriteLine("4. FacadePatternExample");
-                            Console.WriteLine("5. FlyweightPatternExample");
-                            Console.WriteLine("6. ProxyPatternExample");
-                            Console.WriteLine("7. CompositePatternExample");
-                            Console.WriteLine("8. PrivateClassDataPattern");
-                            Console.WriteLine("Press q for exit.");
-                            choice = Console.ReadKey().KeyChar;
+                            Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════╦═══════════════════════╗");
+                            Console.WriteLine("║                         Structural Design Patterns                    ║       P. Back         ║");
+                            Console.WriteLine("╠═══════════════════════╦═══════════════════════╦═══════════════════════╬═══════════════════════╣");
+                            Console.WriteLine("║      1. Adapter       ║       2. Bridge       ║     3. Decorator      ║      4. Facade        ║");
+                            Console.WriteLine("╠═══════════════════════╬═══════════════════════╬═══════════════════════╬═══════════════════════╣");
+                            Console.WriteLine("║      5. Facade        ║       6. Proxy        ║     7. Composite      ║ 8. Private Class Data ║");
+                            Console.WriteLine("╚═══════════════════════╩═══════════════════════╩═══════════════════════╩═══════════════════════╝");
+                            choice = char.ToLower(Console.ReadKey().KeyChar);
                             Console.Clear();
                             switch (choice)
                             {
@@ -117,11 +118,11 @@ namespace DesignPattern.ConsoleApp
                                 case '8':
                                     PrivateClassDataPattern.Run();
                                     break;
-                                case 'q':
+                                case 'p':
                                     done = true;
                                     break;
                                 default:
-                                    Console.WriteLine("Choice range (1-8) or q for previous menu. ");
+                                    Console.WriteLine("Choice range (1-8) or P for previous menu. ");
                                     break;
                             }
                         }
@@ -129,19 +130,16 @@ namespace DesignPattern.ConsoleApp
                     case '3':
                         while (!done)
                         {
-                            Console.WriteLine("1. ChainofResponsibilityPatternExample");
-                            Console.WriteLine("2. CommandPatternExample");
-                            Console.WriteLine("3. InterpreterPatternExample");
-                            Console.WriteLine("4. IteratorPatternExample");
-                            Console.WriteLine("5. MediatorPatternExample");
-                            Console.WriteLine("6. MementoPatternExample");
-                            Console.WriteLine("7. ObserverPatternExample");
-                            Console.WriteLine("8. StatePatternExample");
-                            Console.WriteLine("9. StrategyPatternExample");
-                            Console.WriteLine("a. TemplatePatternExample");
-                            Console.WriteLine("b. VisitorPatternExample");
-                            Console.WriteLine("Press q for exit.");
-                            choice = Console.ReadKey().KeyChar;
+                            Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════════════════╦════════════════════════════╗");
+                            Console.WriteLine("║                          Behavioral Design Patterns                                  ║          P. Back           ║");
+                            Console.WriteLine("╠════════════════════════════╦════════════════════════════╦════════════════════════════╬════════════════════════════╣");
+                            Console.WriteLine("║ 1. Chain of Responsibility ║         2. Command         ║        3. Interpreter      ║          4. Iterator       ║");
+                            Console.WriteLine("╠════════════════════════════╬════════════════════════════╬════════════════════════════╬════════════════════════════╣");
+                            Console.WriteLine("║        5. Mediator         ║         6. Memento         ║        7. Observer         ║          8. State          ║");
+                            Console.WriteLine("╠════════════════════════════╬════════════════════════════╬════════════════════════════╬════════════════════════════╣");
+                            Console.WriteLine("║        9. Strategy         ║         A. Template        ║        B. Visitor          ║       C. Null Object       ║");
+                            Console.WriteLine("╚════════════════════════════╩════════════════════════════╩════════════════════════════╩════════════════════════════╝");
+                            choice = char.ToLower(Console.ReadKey().KeyChar);
                             Console.Clear();
                             switch (choice)
                             {
@@ -178,18 +176,21 @@ namespace DesignPattern.ConsoleApp
                                 case 'b':
                                     VisitorPatternExample.Run();
                                     break;
-                                case 'q':
+                                case 'c':
+                                    NullObjectPatternExample.Run();
+                                    break;
+                                case 'p':
                                     done = true;
                                     break;
                                 default:
-                                    Console.WriteLine("Choice range (1-9, a-b) or q for previous menu. ");
+                                    Console.WriteLine("Choice range (1-9, a-b) or p for previous menu. ");
                                     break;
                             }
                         }
                         break;
-                    case 'q': return;
+                    case 'x': return;
                     default:
-                        Console.WriteLine("Choice range (1-3) or q for exit. ");
+                        Console.WriteLine("Choice range (1-3) or X for exit. ");
                         break;
                 }
             }
