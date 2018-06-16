@@ -55,6 +55,8 @@
     <Compile Include="BehavioralPatterns\TemplatePattern\SortAsc.cs" />
     <Compile Include="BehavioralPatterns\TemplatePattern\SortDesc.cs" />
     <Compile Include="BehavioralPatterns\TemplatePattern\TemplateList.cs" />
+    <Compile Include="BehavioralPatterns\VisitorPattern\FaxVisitor.cs" />
+    <Compile Include="BehavioralPatterns\VisitorPattern\PrintVisitor.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\IAbstractFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FactoryProducer.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\FillFactory.cs" />
