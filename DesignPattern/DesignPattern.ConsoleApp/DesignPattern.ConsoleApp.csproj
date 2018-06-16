@@ -48,6 +48,7 @@
     <Compile Include="BehavioralPatterns\IteratorPattern\IteratorPatternExample.cs" />
     <Compile Include="BehavioralPatterns\MediatorPattern\MediatorPatternExample.cs" />
     <Compile Include="BehavioralPatterns\MementoPattern\MementoPatternExample.cs" />
+    <Compile Include="BehavioralPatterns\NullObjectPattern\NullObjectPatternExample.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\ObserverPatternExample.cs" />
     <Compile Include="BehavioralPatterns\StatePattern\StatePatternExample.cs" />
     <Compile Include="BehavioralPatterns\StrategyPattern\StrategyPatternExample.cs" />

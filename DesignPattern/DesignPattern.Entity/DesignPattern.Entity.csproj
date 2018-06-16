@@ -54,6 +54,9 @@
     <Compile Include="BehavioralPatterns\MediatorPattern\IChatRoom.cs" />
     <Compile Include="BehavioralPatterns\MediatorPattern\Participant.cs" />
     <Compile Include="BehavioralPatterns\MementoPattern\Memento.cs" />
+    <Compile Include="BehavioralPatterns\NullObjectPattern\Customer.cs" />
+    <Compile Include="BehavioralPatterns\NullObjectPattern\NullCustomer.cs" />
+    <Compile Include="BehavioralPatterns\NullObjectPattern\RealCustomer.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\Binary.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\ConsoleWriter.cs" />
     <Compile Include="BehavioralPatterns\ObserverPattern\Element.cs" />
