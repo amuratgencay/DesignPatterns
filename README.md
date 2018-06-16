@@ -36,13 +36,14 @@
 # User Interface
 
  **1. Main Menu**
-	 ![enter image description here](https://lh3.googleusercontent.com/N96bFdoQ5_csAm4aAdXMvnArE0lBsx3reHb1MpYWRbUuf4Kbpw8ZFcE1C4OcxahEAuoxa83mRmC2 "Main Menu")
+![Main Menu](https://lh3.googleusercontent.com/N96bFdoQ5_csAm4aAdXMvnArE0lBsx3reHb1MpYWRbUuf4Kbpw8ZFcE1C4OcxahEAuoxa83mRmC2 "Main Menu")
+
 **2. Creational Patterns**
-![
-](https://lh3.googleusercontent.com/4Sw3BmPWhjr0IGV-Ds11t0LKjI_iCb_Kdx1-IslORs2bCnOR-3dhrGP8mNeCJHEnyeo-rL2daPFD "Creational Patterns")
+
+![Creational Patterns](https://lh3.googleusercontent.com/4Sw3BmPWhjr0IGV-Ds11t0LKjI_iCb_Kdx1-IslORs2bCnOR-3dhrGP8mNeCJHEnyeo-rL2daPFD "Creational Patterns")
+
 **3. Structural Patterns**
-![
-](https://lh3.googleusercontent.com/xhKdIZgiEHC7L7E098OInDH9r0CnE2ZXPTDQIQrRCDT2uzqmKd3sZNFiIB1WVO73SiegXdQA3rui "Structural Patterns")
+![Structural Patterns](https://lh3.googleusercontent.com/xhKdIZgiEHC7L7E098OInDH9r0CnE2ZXPTDQIQrRCDT2uzqmKd3sZNFiIB1WVO73SiegXdQA3rui "Structural Patterns")
+
 **3. Behavioral Patterns**
-![
-](https://lh3.googleusercontent.com/_CR4T7ekikHhO9x_9EFurBYWrIpMWR6Z98CabfLwLO789WbOhZBeBL1zoFtcbiMve6go0Dff3sNz "Behavioral Patterns")
+![Behavioral Patterns](https://lh3.googleusercontent.com/_CR4T7ekikHhO9x_9EFurBYWrIpMWR6Z98CabfLwLO789WbOhZBeBL1zoFtcbiMve6go0Dff3sNz "Behavioral Patterns")
