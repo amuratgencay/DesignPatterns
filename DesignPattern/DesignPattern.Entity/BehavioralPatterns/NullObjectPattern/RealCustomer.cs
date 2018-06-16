@@ -4,13 +4,11 @@
     {
         public RealCustomer(string name) : base(name)
         {
-
         }
 
         public override bool IsNull()
         {
             return false;
         }
-
     }
 }

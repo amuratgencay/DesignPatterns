@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 using DesignPattern.ConsoleApp.BehavioralPatterns.ChainofResponsibilityPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.CommandPattern;
 using DesignPattern.ConsoleApp.BehavioralPatterns.InterpreterPattern;
@@ -33,7 +32,6 @@ namespace DesignPattern.ConsoleApp
         {
             while (true)
             {
-                //╔ ╩ ╦ ╠ ═ ╬ ╣ ║ ╗ ╝ ╚
                 Console.WriteLine("╔═══════════════════════════════════╦═════════════════╗");
                 Console.WriteLine("║          Design Patterns          ║     X. Exit     ║");
                 Console.WriteLine("╠═════════════════╦═════════════════╬═════════════════╣");
@@ -47,11 +45,16 @@ namespace DesignPattern.ConsoleApp
                     case '1':
                         while (!done)
                         {
-                            Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════════════════════╦═════════════════════╗");
-                            Console.WriteLine("║                                   Creational Design Patterns                          ║       P. Back       ║");
-                            Console.WriteLine("╠═════════════════════╦═════════════════════╦═════════════════════╦═════════════════════╬═════════════════════╣");
-                            Console.WriteLine("║     1. Factory      ║ 2. Abstract Factory ║    3. Singleton     ║     4. Builder      ║    5. Prototype     ║");
-                            Console.WriteLine("╚═════════════════════╩═════════════════════╩═════════════════════╩═════════════════════╩═════════════════════╝");
+                            Console.WriteLine(
+                                "╔═══════════════════════════════════════════════════════════════════════════════════════╦═════════════════════╗");
+                            Console.WriteLine(
+                                "║                                   Creational Design Patterns                          ║       P. Back       ║");
+                            Console.WriteLine(
+                                "╠═════════════════════╦═════════════════════╦═════════════════════╦═════════════════════╬═════════════════════╣");
+                            Console.WriteLine(
+                                "║     1. Factory      ║ 2. Abstract Factory ║    3. Singleton     ║     4. Builder      ║    5. Prototype     ║");
+                            Console.WriteLine(
+                                "╚═════════════════════╩═════════════════════╩═════════════════════╩═════════════════════╩═════════════════════╝");
                             choice = char.ToLower(Console.ReadKey().KeyChar);
                             Console.Clear();
                             switch (choice)
@@ -79,17 +82,25 @@ namespace DesignPattern.ConsoleApp
                                     break;
                             }
                         }
+
                         break;
                     case '2':
                         while (!done)
                         {
-                            Console.WriteLine("╔═══════════════════════════════════════════════════════════════════════╦═══════════════════════╗");
-                            Console.WriteLine("║                         Structural Design Patterns                    ║       P. Back         ║");
-                            Console.WriteLine("╠═══════════════════════╦═══════════════════════╦═══════════════════════╬═══════════════════════╣");
-                            Console.WriteLine("║      1. Adapter       ║       2. Bridge       ║     3. Decorator      ║      4. Facade        ║");
-                            Console.WriteLine("╠═══════════════════════╬═══════════════════════╬═══════════════════════╬═══════════════════════╣");
-                            Console.WriteLine("║      5. Facade        ║       6. Proxy        ║     7. Composite      ║ 8. Private Class Data ║");
-                            Console.WriteLine("╚═══════════════════════╩═══════════════════════╩═══════════════════════╩═══════════════════════╝");
+                            Console.WriteLine(
+                                "╔═══════════════════════════════════════════════════════════════════════╦═══════════════════════╗");
+                            Console.WriteLine(
+                                "║                         Structural Design Patterns                    ║       P. Back         ║");
+                            Console.WriteLine(
+                                "╠═══════════════════════╦═══════════════════════╦═══════════════════════╬═══════════════════════╣");
+                            Console.WriteLine(
+                                "║      1. Adapter       ║       2. Bridge       ║     3. Decorator      ║      4. Facade        ║");
+                            Console.WriteLine(
+                                "╠═══════════════════════╬═══════════════════════╬═══════════════════════╬═══════════════════════╣");
+                            Console.WriteLine(
+                                "║      5. Facade        ║       6. Proxy        ║     7. Composite      ║ 8. Private Class Data ║");
+                            Console.WriteLine(
+                                "╚═══════════════════════╩═══════════════════════╩═══════════════════════╩═══════════════════════╝");
                             choice = char.ToLower(Console.ReadKey().KeyChar);
                             Console.Clear();
                             switch (choice)
@@ -126,19 +137,29 @@ namespace DesignPattern.ConsoleApp
                                     break;
                             }
                         }
+
                         break;
                     case '3':
                         while (!done)
                         {
-                            Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════════════════╦════════════════════════════╗");
-                            Console.WriteLine("║                          Behavioral Design Patterns                                  ║          P. Back           ║");
-                            Console.WriteLine("╠════════════════════════════╦════════════════════════════╦════════════════════════════╬════════════════════════════╣");
-                            Console.WriteLine("║ 1. Chain of Responsibility ║         2. Command         ║        3. Interpreter      ║          4. Iterator       ║");
-                            Console.WriteLine("╠════════════════════════════╬════════════════════════════╬════════════════════════════╬════════════════════════════╣");
-                            Console.WriteLine("║        5. Mediator         ║         6. Memento         ║        7. Observer         ║          8. State          ║");
-                            Console.WriteLine("╠════════════════════════════╬════════════════════════════╬════════════════════════════╬════════════════════════════╣");
-                            Console.WriteLine("║        9. Strategy         ║         A. Template        ║        B. Visitor          ║       C. Null Object       ║");
-                            Console.WriteLine("╚════════════════════════════╩════════════════════════════╩════════════════════════════╩════════════════════════════╝");
+                            Console.WriteLine(
+                                "╔══════════════════════════════════════════════════════════════════════════════════════╦════════════════════════════╗");
+                            Console.WriteLine(
+                                "║                          Behavioral Design Patterns                                  ║          P. Back           ║");
+                            Console.WriteLine(
+                                "╠════════════════════════════╦════════════════════════════╦════════════════════════════╬════════════════════════════╣");
+                            Console.WriteLine(
+                                "║ 1. Chain of Responsibility ║         2. Command         ║        3. Interpreter      ║          4. Iterator       ║");
+                            Console.WriteLine(
+                                "╠════════════════════════════╬════════════════════════════╬════════════════════════════╬════════════════════════════╣");
+                            Console.WriteLine(
+                                "║        5. Mediator         ║         6. Memento         ║        7. Observer         ║          8. State          ║");
+                            Console.WriteLine(
+                                "╠════════════════════════════╬════════════════════════════╬════════════════════════════╬════════════════════════════╣");
+                            Console.WriteLine(
+                                "║        9. Strategy         ║         A. Template        ║        B. Visitor          ║       C. Null Object       ║");
+                            Console.WriteLine(
+                                "╚════════════════════════════╩════════════════════════════╩════════════════════════════╩════════════════════════════╝");
                             choice = char.ToLower(Console.ReadKey().KeyChar);
                             Console.Clear();
                             switch (choice)
@@ -187,6 +208,7 @@ namespace DesignPattern.ConsoleApp
                                     break;
                             }
                         }
+
                         break;
                     case 'x': return;
                     default:
@@ -194,7 +216,6 @@ namespace DesignPattern.ConsoleApp
                         break;
                 }
             }
-
         }
     }
 }

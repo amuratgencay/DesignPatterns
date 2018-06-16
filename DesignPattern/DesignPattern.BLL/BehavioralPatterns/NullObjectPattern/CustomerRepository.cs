@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DesignPattern.Entity.BehavioralPatterns.NullObjectPattern;
 
 namespace DesignPattern.BLL.BehavioralPatterns.NullObjectPattern
 {
     public class CustomerRepository
     {
-        private readonly List<Customer> _customerList = new List<Customer>()
+        private readonly List<Customer> _customerList = new List<Customer>
         {
             new RealCustomer("Robert"),
             new RealCustomer("John"),
@@ -19,16 +17,12 @@ namespace DesignPattern.BLL.BehavioralPatterns.NullObjectPattern
 
         public void PrintList()
         {
-            foreach (var customer in _customerList)
-            {
-                Console.WriteLine("\t" + customer);
-            }
+            foreach (var customer in _customerList) Console.WriteLine("\t" + customer);
         }
 
         public Customer GetById(int id)
         {
             return _customerList.FirstOrDefault(x => x.Id == id) ?? new NullCustomer();
         }
-
     }
 }

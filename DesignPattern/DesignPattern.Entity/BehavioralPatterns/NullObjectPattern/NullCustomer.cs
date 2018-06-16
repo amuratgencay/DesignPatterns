@@ -4,7 +4,6 @@
     {
         public NullCustomer() : base("Not Available")
         {
-
         }
 
         public override bool IsNull()
