@@ -66,6 +66,10 @@
     <Compile Include="BehavioralPatterns\StrategyPattern\IStrategy.cs" />
     <Compile Include="BehavioralPatterns\StrategyPattern\IterativeStrategy.cs" />
     <Compile Include="BehavioralPatterns\TemplatePattern\Sort.cs" />
+    <Compile Include="BehavioralPatterns\VisitorPattern\Canon.cs" />
+    <Compile Include="BehavioralPatterns\VisitorPattern\HP.cs" />
+    <Compile Include="BehavioralPatterns\VisitorPattern\IVisitor.cs" />
+    <Compile Include="BehavioralPatterns\VisitorPattern\Printer.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\Blue.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Fill\FillType.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\Shape\Circle.cs" />

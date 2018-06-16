@@ -52,6 +52,7 @@
     <Compile Include="BehavioralPatterns\StatePattern\StatePatternExample.cs" />
     <Compile Include="BehavioralPatterns\StrategyPattern\StrategyPatternExample.cs" />
     <Compile Include="BehavioralPatterns\TemplatePattern\TemplatePatternExample.cs" />
+    <Compile Include="BehavioralPatterns\VisitorPattern\VisitorPatternExample.cs" />
     <Compile Include="CreationalPatterns\AbstractFactoryPattern\AbstractFactoryPatternExample.cs" />
     <Compile Include="CreationalPatterns\BuilderPattern\BuilderPatternExample.cs" />
     <Compile Include="CreationalPatterns\FactoryPattern\FactoryPatternExample.cs" />
