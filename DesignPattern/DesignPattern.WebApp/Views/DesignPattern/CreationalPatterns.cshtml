@@ -1,4 +1,4 @@
-﻿@model DesignPattern.WebApp.Entity.vmCreationalDesignPatterns
+﻿@model DesignPattern.WebApp.Entity.VmCreationalDesignPatterns
 @{
     ViewBag.Title = "CreationalPatterns";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,14 +7,22 @@
 <h1>Creational Patterns</h1>
 <div class="row">
     <hr>
-   
     <table class="table table-bordered col-md-6">
         <tbody>
-            <tr><th style="width: 5%; text-align: center;">S.N.</th><th>Creational Patterns</th></tr>
-            @foreach (var item in Model.CreationalDesignPatterns)
-            {
-                <tr><td style="text-align: center;">@item.Number</td><td><b><a href="#">@item.Name Pattern</a></b><br></td></tr>
-            }
+        <tr>
+            <th style="text-align: center; width: 5%;">S.N.</th><th>Creational Patterns</th>
+        </tr>
+        @foreach (var item in Model.CreationalDesignPatterns)
+        {
+            <tr>
+                <td style="text-align: center;">@item.Number</td>
+                <td>
+                    <b>
+                        <a href="~/CreationalPattern/@(item.Name)Pattern">@item.Name Pattern</a>
+                    </b><br>
+                </td>
+            </tr>
+        }
         </tbody>
     </table>
     <p class="col-md-6">These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.</p>

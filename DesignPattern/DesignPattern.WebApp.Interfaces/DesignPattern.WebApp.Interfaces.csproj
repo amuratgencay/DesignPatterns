@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBLLDesignPatterns.cs" />
+    <Compile Include="IBllDesignPatterns.cs" />
+    <Compile Include="IBllFactoryPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

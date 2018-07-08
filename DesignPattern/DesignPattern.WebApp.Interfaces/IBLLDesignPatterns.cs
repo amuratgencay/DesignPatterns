@@ -1,29 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceModel;
 using DesignPattern.WebApp.Entity;
 
 namespace DesignPattern.WebApp.Interfaces
 {
     [ServiceContract]
-    public interface IBLL
+    public interface IBll
     {
-
+        
     }
 
     [ServiceContract]
-    public interface IBLLDesignPatterns : IBLL
+    public interface IBllDesignPatterns : IBll
     {
         [OperationContract]
-        vmCreationalDesignPatterns GetCreationalDesignPatterns();
+        VmCreationalDesignPatterns GetCreationalDesignPatterns();
+
         [OperationContract]
-        vmStructuralDesignPatterns GetStructuralDesignPatterns();
+        VmStructuralDesignPatterns GetStructuralDesignPatterns();
+
         [OperationContract]
-        vmBehavioralDesignPatterns GetBehavioralDesignPatterns();
+        VmBehavioralDesignPatterns GetBehavioralDesignPatterns();
+
         [OperationContract]
-        vmDesignPatterns GetDesignPatterns();
+        VmDesignPatterns GetDesignPatterns();
     }
 }

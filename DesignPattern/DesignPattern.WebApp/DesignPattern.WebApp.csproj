@@ -148,9 +148,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ControllerBase.cs" />
+    <Compile Include="Controllers\AMGControllerBase.cs" />
+    <Compile Include="Controllers\CreationalPatternController.cs" />
     <Compile Include="Controllers\DesignPatternController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +183,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -198,6 +202,8 @@
     <Content Include="Views\DesignPattern\CreationalPatterns.cshtml" />
     <Content Include="Views\DesignPattern\StructuralPatterns.cshtml" />
     <Content Include="Views\DesignPattern\BehavioralPatterns.cshtml" />
+    <Content Include="Views\Shared\Menu.cshtml" />
+    <Content Include="Views\CreationalPattern\FactoryPattern.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
