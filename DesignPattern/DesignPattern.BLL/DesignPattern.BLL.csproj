@@ -71,6 +71,7 @@
     <Compile Include="CreationalPatterns\BuilderPattern\Piece.cs" />
     <Compile Include="CreationalPatterns\BuilderPattern\TableSpoon.cs" />
     <Compile Include="CreationalPatterns\FactoryPattern\ShapeFactory.cs" />
+    <Compile Include="DesignPatterns\DesignPatternManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CreationalPatterns\PrototypePattern\FibonacciCache.cs" />
     <Compile Include="CreationalPatterns\SingletonPattern\MessageLogger.cs" />
