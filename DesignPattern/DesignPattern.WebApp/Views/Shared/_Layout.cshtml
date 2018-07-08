@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="/Home">Design Patterns</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="creationalNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Creational Patterns<span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="creationalNavbarDropdown">
+                            <a class="dropdown-item" href="~/DesignPattern/CreationalPatterns">Creational Patterns</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Factory</a>
+                            <a class="dropdown-item" href="#">Abstract Factory</a>
+                            <a class="dropdown-item" href="#">Singleton</a>
+                            <a class="dropdown-item" href="#">Builder</a>
+                            <a class="dropdown-item" href="#">Prototype</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="structuralNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Structural Patterns</a>
+                        <div class="dropdown-menu" aria-labelledby="structuralNavbarDropdown">
+                            <a class="dropdown-item" href="~/DesignPattern/StructuralPatterns">Structural Patterns</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Adapter</a>
+                            <a class="dropdown-item" href="#">Bridge</a>
+                            <a class="dropdown-item" href="#">Filter</a>
+                            <a class="dropdown-item" href="#">Composite</a>
+                            <a class="dropdown-item" href="#">Decorator</a>
+                            <a class="dropdown-item" href="#">Facade</a>
+                            <a class="dropdown-item" href="#">Flyweight</a>
+                            <a class="dropdown-item" href="#">Proxy</a>                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Behavioral Patterns</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/DesignPattern/BehavioralPatterns">Behavioral Patterns</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Chain of Responsibility</a>
+                            <a class="dropdown-item" href="#">Command</a>
+                            <a class="dropdown-item" href="#">Interpreter</a>
+                            <a class="dropdown-item" href="#">Iterator</a>
+                            <a class="dropdown-item" href="#">Mediator</a>
+                            <a class="dropdown-item" href="#">Memento</a>
+                            <a class="dropdown-item" href="#">Observer</a>
+                            <a class="dropdown-item" href="#">State</a>
+                            <a class="dropdown-item" href="#">Null Object</a>
+                            <a class="dropdown-item" href="#">Strategy</a>
+                            <a class="dropdown-item" href="#">Template</a>
+                            <a class="dropdown-item" href="#">Visitor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="~/Home/About">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Design by AMG.</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

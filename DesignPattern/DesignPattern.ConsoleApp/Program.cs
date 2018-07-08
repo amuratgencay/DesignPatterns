@@ -87,7 +87,7 @@ namespace DesignPattern.ConsoleApp
                             Console.WriteLine("╠═══════════════════════╦═══════════════════════╦═══════════════════════╬═══════════════════════╣");
                             Console.WriteLine("║      1. Adapter       ║       2. Bridge       ║     3. Decorator      ║      4. Facade        ║");
                             Console.WriteLine("╠═══════════════════════╬═══════════════════════╬═══════════════════════╬═══════════════════════╣");
-                            Console.WriteLine("║      5. Facade        ║       6. Proxy        ║     7. Composite      ║ 8. Private Class Data ║");
+                            Console.WriteLine("║      5. Flyweight     ║       6. Proxy        ║     7. Composite      ║ 8. Private Class Data ║");
                             Console.WriteLine("╚═══════════════════════╩═══════════════════════╩═══════════════════════╩═══════════════════════╝");
                             choice = char.ToLower(Console.ReadKey().KeyChar);
                             Console.Clear();
