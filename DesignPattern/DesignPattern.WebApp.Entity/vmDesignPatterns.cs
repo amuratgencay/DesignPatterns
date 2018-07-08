@@ -1,43 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DesignPattern.WebApp.Entity
 {
     [Serializable]
-    public class vmDesignPattern
+    public class VmDesignPattern
     {
         public int Number { get; set; }
         public string Name { get; set; }
         public string Url { get; set; }
-
     }
 
     [Serializable]
-    public class vmCreationalDesignPatterns
+    public class VmCreationalDesignPatterns
     {
-        public List<vmDesignPattern> CreationalDesignPatterns { get; set; }
+        public List<VmDesignPattern> CreationalDesignPatterns { get; set; }
     }
 
     [Serializable]
-    public class vmStructuralDesignPatterns
+    public class VmStructuralDesignPatterns
     {
-        public List<vmDesignPattern> StructuralDesignPatterns { get; set; }
+        public List<VmDesignPattern> StructuralDesignPatterns { get; set; }
     }
 
     [Serializable]
-    public class vmBehavioralDesignPatterns
+    public class VmBehavioralDesignPatterns
     {
-        public List<vmDesignPattern> BehavioralDesignPatterns { get; set; }
+        public List<VmDesignPattern> BehavioralDesignPatterns { get; set; }
     }
 
     [Serializable]
-    public class vmDesignPatterns
+    public class VmDesignPatterns
     {
-        public vmCreationalDesignPatterns CreationalDesignPatterns { get; set; }
-        public vmStructuralDesignPatterns StructuralDesignPatterns { get; set; }
-        public vmBehavioralDesignPatterns BehavioralDesignPatterns { get; set; }
+        public VmCreationalDesignPatterns CreationalDesignPatterns { get; set; }
+        public VmStructuralDesignPatterns StructuralDesignPatterns { get; set; }
+        public VmBehavioralDesignPatterns BehavioralDesignPatterns { get; set; }
     }
 }

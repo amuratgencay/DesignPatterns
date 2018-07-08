@@ -1,0 +1,67 @@
+﻿@model DesignPattern.WebApp.Entity.VmShapeTypes
+@{
+    ViewBag.Title = "FactoryPattern";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Factory Pattern</h1>
+<div class="row">
+    <hr>
+    <div class="col-md-6">
+        <p>Factory pattern is one of the most used design patterns in Java. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.</p>
+        <p>In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.</p>
+
+
+
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="dropdown col-md-12">
+                Shape Type:&nbsp;
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-selected="0" id="cmbShapeType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @(Model.ShapeTypes.FirstOrDefault()?.Name)
+                </button>
+                <div class="dropdown-menu" aria-labelledby="cmbShapeType">
+                    @foreach (var item in Model.ShapeTypes)
+                    {
+                        <a class="dropdown-item" href="#" data-value="@item.Id">@item.Name</a>
+                    }
+                </div>
+                <button id="btnCreate" type="button" class="btn btn-success">Create</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <img id="cnvResult" width="100" height="100" src="" alt="Select shape type and create"/>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<script>
+
+    $(".dropdown-item").click(function (e) {
+        e.preventDefault();
+        $("#cmbShapeType").html(e.currentTarget.innerHTML);
+        $("#cmbShapeType").data("selected",$(e.currentTarget).data("value"));
+    });
+
+    $("#btnCreate").click(function(e) {
+        $.ajax({
+            type: 'GET',
+            data: "shapeType=" + $("#cmbShapeType").data("selected"),
+            url: '@Url.Action("FactoryCreateImage", "CreationalPattern")',
+            success: function (data) {
+                $("#cnvResult").attr('src', 'data:image/png;base64,' + data);
+            },
+            error: function () {
+                alert('error');
+            },
+        });
+    });
+
+
+</script>

@@ -1,36 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using DesignPattern.WebApp.Entity;
+﻿using System.Web.Mvc;
 using DesignPattern.WebApp.Interfaces;
 
 namespace DesignPattern.WebApp.Controllers
 {
     public class DesignPatternController : AMGControllerBase
     {
-        [BLLUsage("IBLLDesignPatterns")]
+        [BllUsage(typeof(IBllDesignPatterns))]
         public ActionResult CreationalPatterns()
         {
-            IBLLDesignPatterns bll = (IBLLDesignPatterns)Bll;
-            vmCreationalDesignPatterns model = bll.GetCreationalDesignPatterns();
+            var bll = (IBllDesignPatterns) Bll;
+            var model = bll.GetCreationalDesignPatterns();
             return View(model);
         }
 
-        [BLLUsage("IBLLDesignPatterns")]
+        [BllUsage(typeof(IBllDesignPatterns))]
         public ActionResult StructuralPatterns()
         {
-            IBLLDesignPatterns bll = (IBLLDesignPatterns)Bll;
-            vmStructuralDesignPatterns model = bll.GetStructuralDesignPatterns();
+            var bll = (IBllDesignPatterns) Bll;
+            var model = bll.GetStructuralDesignPatterns();
             return View(model);
         }
 
-        [BLLUsage("IBLLDesignPatterns")]
+        [BllUsage(typeof(IBllDesignPatterns))]
         public ActionResult BehavioralPatterns()
         {
-            IBLLDesignPatterns bll = (IBLLDesignPatterns)Bll;
-            vmBehavioralDesignPatterns model = bll.GetBehavioralDesignPatterns();
+            var bll = (IBllDesignPatterns) Bll;
+            var model = bll.GetBehavioralDesignPatterns();
             return View(model);
         }
     }

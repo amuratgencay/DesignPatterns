@@ -1,57 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using DesignPattern.BLL.DesignPatterns;
 using DesignPattern.WebApp.Entity;
 using DesignPattern.WebApp.Interfaces;
 
 namespace DesignPattern.WebApp.BLL
 {
-    public class BLLDesignPatterns : IBLLDesignPatterns
+    public class BllDesignPatterns : IBllDesignPatterns
     {
-        public vmCreationalDesignPatterns GetCreationalDesignPatterns()
+        public VmCreationalDesignPatterns GetCreationalDesignPatterns()
         {
-            var bll = new DesignPattern.BLL.DesignPatterns.DesignPatternManager();
+            var bll = new DesignPatternManager();
             var number = 1;
-            var res = new vmCreationalDesignPatterns
+            var res = new VmCreationalDesignPatterns
             {
                 CreationalDesignPatterns = bll.CreationalPatterns
-                    .Select(x => new vmDesignPattern {Name = x, Url = x, Number = number++}).ToList()
+                    .Select(x => new VmDesignPattern {Name = x, Url = x, Number = number++}).ToList()
             };
 
             return res;
         }
 
-        public vmStructuralDesignPatterns GetStructuralDesignPatterns()
+        public VmStructuralDesignPatterns GetStructuralDesignPatterns()
         {
-            var bll = new DesignPattern.BLL.DesignPatterns.DesignPatternManager();
+            var bll = new DesignPatternManager();
             var number = 1;
-            var res = new vmStructuralDesignPatterns
+            var res = new VmStructuralDesignPatterns
             {
                 StructuralDesignPatterns = bll.CreationalPatterns
-                    .Select(x => new vmDesignPattern {Name = x, Url = x, Number = number++}).ToList()
+                    .Select(x => new VmDesignPattern {Name = x, Url = x, Number = number++}).ToList()
             };
 
             return res;
         }
 
-        public vmBehavioralDesignPatterns GetBehavioralDesignPatterns()
+        public VmBehavioralDesignPatterns GetBehavioralDesignPatterns()
         {
-            var bll = new DesignPattern.BLL.DesignPatterns.DesignPatternManager();
+            var bll = new DesignPatternManager();
             var number = 1;
-            var res = new vmBehavioralDesignPatterns
+            var res = new VmBehavioralDesignPatterns
             {
                 BehavioralDesignPatterns = bll.CreationalPatterns
-                    .Select(x => new vmDesignPattern {Name = x, Url = x, Number = number++}).ToList()
+                    .Select(x => new VmDesignPattern {Name = x, Url = x, Number = number++}).ToList()
             };
 
             return res;
         }
 
-        public vmDesignPatterns GetDesignPatterns()
+        public VmDesignPatterns GetDesignPatterns()
         {
-            var res = new vmDesignPatterns
+            var res = new VmDesignPatterns
             {
                 CreationalDesignPatterns = GetCreationalDesignPatterns(),
                 StructuralDesignPatterns = GetStructuralDesignPatterns(),
